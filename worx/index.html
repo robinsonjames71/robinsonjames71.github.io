@@ -47,14 +47,18 @@
         </div>
     </nav>
 
-    <div class="w3-display-container">
-        <img srcset="./images/carousel/mechanic-video.jpg 1680w,
-                     ./images/carousel/mechanic-video@0.jpg 840w,
-                     ./images/carousel/mechanic-video@1.jpg 2520w,
-                     ./images/carousel/mechanic-video@2x.jpg 3360w"
-                src="./images/carousel/mechanic-video.jpg"
-                class="mySlides"
-                alt="alt">
+    <div class="w3-display-container carousel">
+        <div class="mySlides video">
+            <img srcset="./images/carousel/mechanic-video.jpg 1680w,
+                         ./images/carousel/mechanic-video@0.jpg 840w,
+                         ./images/carousel/mechanic-video@1.jpg 2520w,
+                         ./images/carousel/mechanic-video@2x.jpg 3360w"
+                    src="./images/carousel/mechanic-video.jpg"
+                    class="preview"
+                    alt="Worx Auto Mechanic Reservoir">
+            <img class="play-btn" src="./images/carousel/play-btn.svg" alt="Play Video Button">
+            <iframe class="embedded-video" width="560" height="315" src="https://www.youtube.com/embed/aA7P2SfjBr8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
         <img srcset="./images/carousel/mechanic-bmw.jpg 1680w,
                      ./images/carousel/mechanic-bmw@0.jpg 840w,
                      ./images/carousel/mechanic-bmw@1.jpg 2520w,
@@ -70,8 +74,12 @@
                 class="mySlides"
                 alt="alt">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-            <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+            <div class="arrow w3-left" onclick="plusDivs(-1)">
+                <img src="./images/carousel/left-arrow.svg" alt="">
+            </div>
+            <div class="arrow w3-right" onclick="plusDivs(1)">
+                <img src="./images/carousel/right-arrow.svg" alt="">
+            </div>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
@@ -135,6 +143,20 @@
     </div>
 
     <div class="w3-row social-media-section">
+        <div class="circle">
+            <div class="semicircle left-semicircle">
+                <div class="facebook">
+                    <img src="./images/icons/facebook.svg" width="39" height="35" alt="">
+                    <p>Facebook Page</p>
+                </div>
+            </div>
+            <div class="semicircle right-semicircle">
+                <div class="instagram">
+                    <img src="./images/icons/instagram.svg" width="39" height="35" alt="">
+                    <p>Instagram Gallery</p>
+                </div>
+            </div>
+        </div>
         <div class="w3-col s6">
             <div class="content">
                 <img srcset="./images/social-media/european-car-mechanic-mini.jpg 840w,
