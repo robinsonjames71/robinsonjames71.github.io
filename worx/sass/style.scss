@@ -158,6 +158,10 @@ nav {
     }
 }
 
+.w3-display-bottommiddle {
+    z-index: 5;
+}
+
 .carousel-button {
     height: 13px;
     width: 13px;
@@ -302,23 +306,26 @@ nav {
     }
     .left-semicircle {
         left: 0;
+        z-index: 10;
 
         .facebook {
             position: absolute;
             top: 50%;
-            transform: translateY(-25%);
+            transform: translateY(-50%);
             width: 50%;
             right: 20px;
             text-align: right;
         }
         img {
             display: inline-block;
+            margin-bottom: 5px;
         }
         p {
             color: #FFF;
         }
     }
     .right-semicircle {
+        overflow: hidden;
         right: 0;
         border-radius: 0 200px 200px 0;
         background-color: #DADADA;
@@ -326,13 +333,14 @@ nav {
         .instagram {
             position: absolute;
             top: 50%;
-            transform: translateY(-25%);
+            transform: translateY(-50%);
             width: 50%;
             left: 20px;
             text-align: left;
         }
         img {
             display: inline-block;
+            margin-bottom: 5px;
         }
         p {
             color: #333333;
@@ -350,6 +358,15 @@ nav {
         min-width: 840px;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .fb-page {
+        opacity: 0;
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
     }
 }
 

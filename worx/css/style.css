@@ -139,6 +139,9 @@ nav {
     .carousel .arrow img {
       width: 100%; }
 
+.w3-display-bottommiddle {
+  z-index: 5; }
+
 .carousel-button {
   height: 13px;
   width: 13px;
@@ -254,31 +257,35 @@ nav {
     width: 50%;
     height: 100%; }
   .social-media-section .left-semicircle {
-    left: 0; }
+    left: 0;
+    z-index: 10; }
     .social-media-section .left-semicircle .facebook {
       position: absolute;
       top: 50%;
-      transform: translateY(-25%);
+      transform: translateY(-50%);
       width: 50%;
       right: 20px;
       text-align: right; }
     .social-media-section .left-semicircle img {
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 5px; }
     .social-media-section .left-semicircle p {
       color: #FFF; }
   .social-media-section .right-semicircle {
+    overflow: hidden;
     right: 0;
     border-radius: 0 200px 200px 0;
     background-color: #DADADA; }
     .social-media-section .right-semicircle .instagram {
       position: absolute;
       top: 50%;
-      transform: translateY(-25%);
+      transform: translateY(-50%);
       width: 50%;
       left: 20px;
       text-align: left; }
     .social-media-section .right-semicircle img {
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 5px; }
     .social-media-section .right-semicircle p {
       color: #333333; }
   .social-media-section .w3-col {
@@ -291,6 +298,13 @@ nav {
     min-width: 840px;
     left: 50%;
     transform: translateX(-50%); }
+  .social-media-section .fb-page {
+    opacity: 0;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; }
 
 .services-banner {
   background: black;

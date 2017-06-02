@@ -30,4 +30,23 @@ function showDivs(n) {
         $('.embedded-video').show().css({'z-index': 1})
             .attr('src', $('.embedded-video').attr('src') + "&autoplay=1")
     })
+
+    $('.facebook').on('click', function() {
+        $('.right-semicircle').animate({
+            width: 0
+        }, 200);
+        $(this).animate({
+            top: '25%',
+            right: '-20px',
+            width: '90%'
+        })
+        $(this).children('p').animate({
+            'marginRight': '-25%'
+        }, function() {
+            $('.fb-page').animate({
+                opacity: 1
+            })
+        })
+        
+    })
 })();
