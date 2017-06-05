@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const fileinclude = require('gulp-file-include');
 
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -29,8 +30,13 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass']);
-});
+gulp.task('fileinclude', function(){
+    return gulp.src(['index.html'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./'));
+})
 
-gulp.task('default', ['serve', 'sass:watch']);
+gulp.task('default', ['serve', 'fileinclude']);
