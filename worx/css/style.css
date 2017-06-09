@@ -95,6 +95,44 @@ nav {
   transition: top .2s linear, transform .2s linear .2s;
   transform: rotate(-45deg); }
 
+.nav-menu-state:checked ~ .mobile-menu {
+  max-height: 500px; }
+
+.mobile-menu {
+  position: absolute;
+  top: 120px;
+  width: 100vw;
+  background-color: #1a1a1a;
+  z-index: 200;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s; }
+  .mobile-menu .mobile-link {
+    display: block;
+    width: calc(100% - 40px);
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF; }
+  .mobile-menu .mobile-link:first-child {
+    border-top: 1px solid #FFF; }
+  .mobile-menu .mobile-social-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    vertical-align: middle;
+    border-bottom: 0;
+    padding-top: 8px;
+    border-bottom: 1px solid #FFF; }
+    .mobile-menu .mobile-social-media a {
+      margin-right: 20%; }
+    .mobile-menu .mobile-social-media a:last-child {
+      margin-right: 0; }
+
 .worx-logo {
   float: right;
   display: -ms-flexbox;
@@ -124,21 +162,21 @@ nav {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #FF670B;
   float: left;
   width: 100%;
   height: 39px;
   padding-left: 13px;
   padding-right: 13px; }
   .contact p {
-    color: #000;
+    color: #FFF;
     font-weight: 300; }
   .contact a,
   .contact a:link,
   .contact a:visited,
   .contact a:hover,
   .contact a:active {
-    color: #000;
+    color: #FFF;
     text-decoration: none; }
 
 .subnav {
@@ -160,8 +198,10 @@ nav {
     margin-bottom: 10px;
     border-right: 1px solid #F4F4F4;
     color: #FFF; }
-    .subnav .subnav-link p {
-      text-transform: uppercase; }
+    .subnav .subnav-link a {
+      text-transform: uppercase;
+      text-decoration: none;
+      height: 33px; }
     .subnav .subnav-link:last-child {
       border-right: 0; }
 
@@ -181,7 +221,15 @@ nav {
     order: -1; }
   .contact {
     -ms-flex-pack: end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    background-color: #FFF; }
+    .contact p,
+    .contact a,
+    .contact a:link,
+    .contact a:visited,
+    .contact a:hover,
+    .contact a:active {
+      color: #000; }
   .subnav {
     display: -ms-flexbox;
     display: flex; }
@@ -190,10 +238,10 @@ nav {
 
 .carousel {
   position: relative;
-  width: 100%; }
+  width: 100vw; }
   .carousel .video {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%; }
   .carousel .play-btn {
     position: absolute;
@@ -204,7 +252,8 @@ nav {
     max-width: 109px;
     cursor: pointer; }
   .carousel .preview {
-    display: block !important; }
+    display: block !important;
+    width: 100vw; }
   .carousel .embedded-video {
     position: absolute;
     top: 0;
@@ -214,7 +263,8 @@ nav {
     z-index: -1; }
   .carousel .arrow {
     max-width: 200px;
-    width: 20%; }
+    width: 20%;
+    cursor: pointer; }
     .carousel .arrow img {
       width: 100%; }
 
@@ -235,7 +285,8 @@ nav {
   height: 13px;
   width: 13px;
   padding: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
 
 .contact-banner {
   background: black;
