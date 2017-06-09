@@ -234,12 +234,15 @@ nav {
 }
 @media screen and (min-width: 550px) {
     .worx-logo {
-        width: 40%;
+        width: 30%;
     }
 }
 @media screen and (min-width: 850px) {
     nav {
         display: flex;
+    }
+    nav .nav-wrapper {
+        width: calc(70% - 140px);
     }
     .mobile-nav {
         display: none;
@@ -485,7 +488,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 135px;
-    min-width: 1240px;
+
+    width: 100vw;
 }
 
 .social-media-section {

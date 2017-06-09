@@ -207,12 +207,14 @@ nav {
 
 @media screen and (min-width: 550px) {
   .worx-logo {
-    width: 40%; } }
+    width: 30%; } }
 
 @media screen and (min-width: 850px) {
   nav {
     display: -ms-flexbox;
     display: flex; }
+  nav .nav-wrapper {
+    width: calc(70% - 140px); }
   .mobile-nav {
     display: none; }
   .worx-logo {
@@ -405,7 +407,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   height: 135px;
-  min-width: 1240px; }
+  width: 100vw; }
 
 .social-media-section {
   position: relative;
