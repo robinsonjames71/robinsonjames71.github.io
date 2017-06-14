@@ -8,14 +8,14 @@ const nunjucksRender = require('gulp-nunjucks-render');
 const autoprefixer = require('gulp-autoprefixer');
 const supportedBrowsers = ['last 2 versions', 'Firefox ESR', 'Safari >= 8', '>1%'];
 
-gulp.task('serve', ['sass', 'nunjucks'], function() {
+gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
         server: "./"
     });
 
     gulp.watch("./sass/*.scss", ['sass']);
-    gulp.watch(["./templates/**/*.+(html|nunjucks)","./pages/**/*.+(html|nunjucks)"], ['nunjucks']);
+    gulp.watch("./*.html,./*.nunjucks").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {
@@ -30,12 +30,11 @@ gulp.task('sass', function () {
 });
 
 gulp.task('nunjucks', function(){
-    return gulp.src('./pages/**/*.+(html|nunjucks)')
+    return gulp.src('pages/**/*.+(html|nunjucks)')
         .pipe(nunjucksRender({
             path: ['templates']
         }))
         .pipe(gulp.dest('./'))
-        .pipe(browserSync.stream());
 })
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve', 'nunjucks']);
