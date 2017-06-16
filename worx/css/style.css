@@ -628,3 +628,40 @@ nav {
   .page-footer .copyright p {
     font-size: 24px;
     line-height: 29px; } }
+
+.header {
+  position: relative; }
+  .header .title {
+    position: absolute;
+    bottom: 0;
+    height: 140px;
+    max-width: 387px;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .header h2 {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 55px; }
+
+.servicing-vehicle {
+  position: relative;
+  min-height: 531px;
+  width: 90%;
+  margin: 100px auto 90px; }
+  .servicing-vehicle .images {
+    position: relative; }
+    .servicing-vehicle .images div {
+      position: relative; }
+    .servicing-vehicle .images .behind {
+      z-index: -1; }
+    .servicing-vehicle .images .right {
+      left: calc(100% - 83.3333%); }
+    .servicing-vehicle .images .right img {
+      transform: translateY(16.6667%); }
+    .servicing-vehicle .images img {
+      position: absolute;
+      top: 0;
+      width: 100%; }
