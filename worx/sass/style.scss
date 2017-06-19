@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
-h1,h2,h3,h4,h5,p,a {
+h1,h2,h3,h4,h5,p,a,li {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #FFF;
     margin: 0;
 }
-
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
 html {
     background-color: #000;
 }
@@ -16,7 +19,6 @@ p {
 }
 img {
     display: block;
-    // max-width: 100%;
     width: auto;
 }
 
@@ -45,6 +47,9 @@ nav {
 }
 
 @media screen and (min-width: 700px) {
+    .nav-placeholder {
+        height: 101px;
+    }
     nav p {
         font-size: 1.7vw;
         line-height: 2.1vw;
@@ -269,6 +274,11 @@ nav {
     }
     .book-now {
         display: block;
+    }
+}
+@media screen and (min-width: 1420px) {
+    nav .nav-wrapper {
+        width: 100%;
     }
 }
 
@@ -639,9 +649,12 @@ nav {
 
     #map {
         position: absolute;
-        z-index: -1;
         height: 100%;
         width: 100%;
+    }
+    .location {
+        position: relative;
+        z-index: 2;
     }
 
     > img {
@@ -763,36 +776,99 @@ nav {
     }
 }
 
+// Banner
+.scroll-container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
 // Subpages
 .header {
     position: relative;
 
-    .title {
+    .title-container {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .title:before {
         position: absolute;
         bottom: 0;
-        height: 140px;
+        display: block;
+        content: '';
+        width: 100%;
+        padding-bottom: 36.1757%;
+        max-height: 140px;
         max-width: 387px;
         background-color: rgba(0,0,0,0.4);
+    }
+    .title {
+        position: absolute;
+        bottom: -5px;
+        max-height: 140px;
+        max-width: 387px;
     }
     h2 {
         position: relative;
         text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
         text-transform: uppercase;
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 5vw;
+        // line-height: 6.2vw;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+    img {
+        position: relative;
+        min-width: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (min-width: 601px) {
+    .header {
+        h2 {
+            font-size: 4vw;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+@media screen and (min-width: 1001px) {
+    .header {
+        h2 {
+            font-size: 40px;
+        }
+        .title {
+            position: absolute;
+        }
     }
 }
 .servicing-vehicle {
     position: relative;
     min-height: 531px;
     width: 90%;
-    margin: 100px auto 90px;
+    margin: 30px auto 40px;
 
+    .w3-col {
+        min-height: 1px;
+    }
+    > div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     .images {
         position: relative;
+        padding-bottom: 83.3333%;
 
         div {
             position: relative;
@@ -810,6 +886,176 @@ nav {
             position: absolute;
             top: 0;
             width: 100%;
+        }
+
+        .bg-border {
+            position: absolute;
+            transform: translateY(100% - 91.6666%);
+            left: calc(100% - 91.6666%);
+            border: 5px solid #FF670B;
+            padding-bottom: 81.6%;
+            z-index: -2;
+        }
+
+        &:last-child {
+            margin-top: 30px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 601px) {
+    .servicing-vehicle {
+        display: flex;
+        align-items: center;
+        margin: 100px auto 90px;
+
+        > div {
+            left: 0;
+            transform: none;
+        }
+
+        .images {
+            padding-bottom: 50%;
+        }
+    }
+}
+.services-banner {
+    background: #FF670B;
+    height: 87px;
+    padding-top: 14px;
+
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+        width: 205px;
+        text-align: center;
+    }
+    .scroll-container {
+        min-width: 1540px;
+    }
+}
+
+// Contact page
+.contact-page-section {
+    position: relative;
+    width: 90%;
+    margin: 30px auto 40px;
+
+    .w3-col {
+        min-height: 1px;
+    }
+    > div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map {
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 601px) {
+    .contact-page-section {
+        display: flex;
+
+        align-items: center;
+        > div {
+            position: relative;
+            left: 0;
+            transform: none;
+        }
+    }
+}
+.booking-title {
+    background: #FF670B;
+    height: 87px;
+
+    .booking-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2 {
+        line-height: 87px;
+        text-transform: uppercase;
+    }
+}
+.booking-form {
+    width: 90%;
+    margin: 30px auto 40px;
+
+    .w3-col {
+        float: none;
+        margin: 0 auto;
+    }
+    .w3-col * {
+        width: 100%;
+    }
+    .w3-col .message {
+        height: 85%;
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    input {
+        height: 54px;
+        padding: 0 10px;
+    }
+    textarea {
+        height: 200px;
+        padding: 10px;
+    }
+}
+.submit-form {
+    width: 90%;
+    margin: 0 auto;
+
+    button {
+        position: relative;
+        right: 8.3333%;
+        float: right;
+        background-color: #FF670B;
+        border-radius: 3px;
+        border: 0;
+        width: 176px;
+        height: 55px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 27px;
+
+        &:hover {
+            background-color: #F35B00;
+        }
+    }
+}
+@media screen and (min-width: 601px) {
+    .booking-form {
+        display: flex;
+
+        .w3-col {
+            float: left;
+        }
+        .w3-col:first-child {
+            padding-right: 20px;
+        }
+        textarea {
+            height: calc(100% - 4px);
+        }
+    }
+    .submit-form {
+        button {
+            right: 0;
         }
     }
 }

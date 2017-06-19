@@ -1,0 +1,107 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+            <img srcset="/images/headers/services-head.jpg 1680w,
+                         /images/headers/services-head@0.jpg 840w,
+                         /images/headers/services-head@1.jpg 2520w,
+                         /images/headers/services-head@2x.jpg 3360w"
+                    src="/images/headers/services-head.jpg"
+                    class="preview"
+                    alt="Worx Auto Services Reservoir">
+        <div class="title-container">
+            <div class="w3-col s4 title">
+                <h2>Services</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row contact-banner">
+        <div class="w3-col s4">
+            <div class="content contact-us">
+                <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
+                <p><strong>Contact Us</strong></p>
+                <p>03 9387 4440</p>
+                <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content address">
+                <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
+                <p><strong>Address</strong></p>
+                <p>353 Albert St, Brunswick,</p>
+                <p>Victoria, 3056</p>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content hours">
+                <img src="/images/contact-banner/mechanic-hours.svg" width="49" height="49" alt="">
+                <p><strong>Business Hours</strong></p>
+                <p>Monday to Friday</p>
+                <p>8:00am - 5:00pm</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row contact-page-section">
+        <div class="w3-col s10 m5">
+            <p>Please call, email or visit us in person as we are happy to assist with any enquiries.</p>
+            <p>Conveniently located in Brunswick - less than 15 minutes from Melbourne CBD - Worx Automotive is able to service clients from all areas of Melbourne. With the Brunswick train station just a short walk away, along with the plethora of shops on Sydney Rd - keeping yourself entertained while your car is being looked after is never an issue.</p>
+        </div>
+        <div class="w3-col s0 m1">
+        </div>
+        <div class="w3-row w3-col s10 m6">
+            <div class="map">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row booking-title">
+        <div class="booking-container">
+            <h2>Booking Form</h2>
+        </div>
+    </div>
+
+    <div class="w3-row booking-form">
+        <div class="w3-col s10 m6">
+            <div class="name">
+                <p>Name*</p>
+                <input type="text">
+            </div>
+            <div class="email">
+                <p>Email*</p>
+                <input type="text">
+            </div>
+            <div class="subject">
+                <p>Subject*</p>
+                <input type="text">
+            </div>
+        </div>
+        <div class="w3-col s10 m6">
+            <div class="message">
+                <p>Message*</p>
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row submit-form">
+        <div class="submit-container">
+            <button type="submit" form="form1" value="Submit">Send Email</button>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=10153537110783429";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuEKvCCeFcsqDak-R9JOnqclDN2cxtBU8"></script>
+
+{% endblock %}

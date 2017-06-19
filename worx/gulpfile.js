@@ -4,6 +4,14 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
+const imagemin = require('gulp-imagemin');
+
+gulp.task('optimise', () =>
+    gulp.src('./images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
+
 const nunjucksRender = require('gulp-nunjucks-render');
 const autoprefixer = require('gulp-autoprefixer');
 const supportedBrowsers = ['last 2 versions', 'Firefox ESR', 'Safari >= 8', '>1%'];
