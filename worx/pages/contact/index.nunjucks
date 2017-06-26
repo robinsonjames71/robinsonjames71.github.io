@@ -4,17 +4,17 @@
 {% block content %}
     {% include "partials/navigation.html" %}
 
-    <div class="w3-display-container header">
-            <img srcset="/images/headers/services-head.jpg 1680w,
-                         /images/headers/services-head@0.jpg 840w,
-                         /images/headers/services-head@1.jpg 2520w,
-                         /images/headers/services-head@2x.jpg 3360w"
-                    src="/images/headers/services-head.jpg"
+    <div class="w3-display-container header contact-header">
+            <img srcset="/images/headers/contact-head.jpg 1680w,
+                         /images/headers/contact-head@0.jpg 840w,
+                         /images/headers/contact-head@1.jpg 2520w,
+                         /images/headers/contact-head@2x.jpg 3360w"
+                    src="/images/headers/contact-head.jpg"
                     class="preview"
-                    alt="Worx Auto Services Reservoir">
+                    alt="Worx Auto Contact Reservoir">
         <div class="title-container">
-            <div class="w3-col s4 title">
-                <h2>Services</h2>
+            <div class="w3-col s5 title">
+                <h2>Contact Us</h2>
             </div>
         </div>
     </div>
@@ -62,37 +62,39 @@
 
     <div class="w3-row booking-title">
         <div class="booking-container">
-            <h2>Booking Form</h2>
+            <h2 id="booking">Booking Form</h2>
         </div>
     </div>
 
-    <div class="w3-row booking-form">
-        <div class="w3-col s10 m6">
-            <div class="name">
-                <p>Name*</p>
-                <input type="text">
+    <form role="form" method="post" action="/js/email.php">
+        <div class="w3-row booking-form">
+            <div class="w3-col s10 m6">
+                <div class="name">
+                    <p>Name*</p>
+                    <input type="text" name="name">
+                </div>
+                <div class="email">
+                    <p>Email*</p>
+                    <input type="text" name="email">
+                </div>
+                <div class="subject">
+                    <p>Subject*</p>
+                    <input type="text" name="subject">
+                </div>
             </div>
-            <div class="email">
-                <p>Email*</p>
-                <input type="text">
-            </div>
-            <div class="subject">
-                <p>Subject*</p>
-                <input type="text">
+            <div class="w3-col s10 m6">
+                <div class="message">
+                    <p>Message*</p>
+                    <textarea name="message"></textarea>
+                </div>
             </div>
         </div>
-        <div class="w3-col s10 m6">
-            <div class="message">
-                <p>Message*</p>
-                <textarea></textarea>
+        <div class="w3-row submit-form">
+            <div class="submit-container">
+                <input type="submit" name="submit" value="Send Email">
             </div>
         </div>
-    </div>
-    <div class="w3-row submit-form">
-        <div class="submit-container">
-            <button type="submit" form="form1" value="Submit">Send Email</button>
-        </div>
-    </div>
+    </form>
 
     {% include "partials/footer.html" %}
     <script>(function(d, s, id) {

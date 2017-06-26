@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const php = require('gulp-connect-php');
 
 const imagemin = require('gulp-imagemin');
 
@@ -35,6 +36,10 @@ gulp.task('sass', function () {
         }))
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream());
+});
+
+gulp.task('php', function() {
+    php.server({ base: './', port: 8010, keepalive: true});
 });
 
 gulp.task('nunjucks', function(){

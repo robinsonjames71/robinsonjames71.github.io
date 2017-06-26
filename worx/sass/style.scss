@@ -20,6 +20,11 @@ p {
 img {
     display: block;
     width: auto;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8,0.8);
+}
+img.loaded {
+    transform: scale(1,1);
 }
 
 
@@ -220,7 +225,7 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 33%;
+        width: 25%;
         margin-top: 10px;
         margin-bottom: 10px;
         border-right: 1px solid #F4F4F4;
@@ -229,7 +234,8 @@ nav {
         a {
             text-transform: uppercase;
             text-decoration: none;
-            height: 33px;
+            height: 25px;
+            line-height: 25px;
         }
 
         &:last-child {
@@ -242,7 +248,7 @@ nav {
         width: 30%;
     }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
     nav {
         display: flex;
     }
@@ -322,6 +328,9 @@ nav {
         img {
             width: 100%;
         }
+    }
+    > img {
+        margin-bottom: 0;
     }
 }
 
@@ -582,6 +591,7 @@ nav {
     }
 
     .fb-page {
+        z-index: -1;
         opacity: 0;
         position: absolute;
         top: 140px;
@@ -646,6 +656,7 @@ nav {
 .map {
     position: relative;
     height: 415px;
+    margin-top: 50px;
 
     #map {
         position: absolute;
@@ -941,6 +952,9 @@ nav {
 }
 
 // Contact page
+.contact-header .title {
+    right: 0;
+}
 .contact-page-section {
     position: relative;
     width: 90%;
@@ -1021,21 +1035,24 @@ nav {
     width: 90%;
     margin: 0 auto;
 
-    button {
+    input[type="submit"] {
         position: relative;
-        right: 8.3333%;
         float: right;
-        background-color: #FF670B;
-        border-radius: 3px;
+        outline: 0;
         border: 0;
+        border-radius: 3px;
         width: 176px;
         height: 55px;
         color: #FFF;
         font-size: 20px;
         line-height: 27px;
+        background-color: #FF670B;
 
         &:hover {
             background-color: #F35B00;
+        }
+        &:active {
+            top: 2px;
         }
     }
 }
@@ -1058,4 +1075,23 @@ nav {
             right: 0;
         }
     }
+}
+
+
+
+.gallery-banner {
+    background: rgba(255,105,11,1);
+    height: 87px;
+    padding-top: 18px;
+
+    .content {
+        text-align: center;
+    }
+    img {
+        display: inline-block;
+    }
+}
+.gallery-section {
+    width: 90%;
+    margin: 30px auto;
 }

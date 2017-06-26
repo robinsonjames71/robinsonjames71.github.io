@@ -11,7 +11,7 @@ function currentDiv(n) {
 
 function showDivs(n) {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("carousel-slides");
     if(x.length > 0) {
         var dots = document.getElementsByClassName("carousel-button");
         if (n > x.length) {slideIndex = 1}
@@ -38,16 +38,20 @@ function showDivs(n) {
             width: 0
         }, 200, function() {});
         $(this).css({'width': '90%'}).animate({
-                top: '25%',
-                right: '-20px'
+            top: '25%',
+            right: '-20px'
         })
         $(this).children('p').animate({
             'left': '25%'
         }, function() {
-            $('.fb-page').animate({
+            $('.fb-page').css({'z-index': '-1'}).animate({
                 opacity: 1
             })
         })
+    })
+
+    $('.w3-row img').on('load', function(){
+        $(this).addClass('loaded');
     })
 
 })();

@@ -19,7 +19,12 @@ p {
 
 img {
   display: block;
-  width: auto; }
+  width: auto;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8, 0.8); }
+
+img.loaded {
+  transform: scale(1, 1); }
 
 .nav-placeholder {
   height: 101px; }
@@ -199,7 +204,7 @@ nav {
     justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
-    width: 33%;
+    width: 25%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-right: 1px solid #F4F4F4;
@@ -207,7 +212,8 @@ nav {
     .subnav .subnav-link a {
       text-transform: uppercase;
       text-decoration: none;
-      height: 33px; }
+      height: 25px;
+      line-height: 25px; }
     .subnav .subnav-link:last-child {
       border-right: 0; }
 
@@ -215,7 +221,7 @@ nav {
   .worx-logo {
     width: 30%; } }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
   nav {
     display: -ms-flexbox;
     display: flex; }
@@ -279,6 +285,8 @@ nav {
     cursor: pointer; }
     .carousel .arrow img {
       width: 100%; }
+  .carousel > img {
+    margin-bottom: 0; }
 
 .w3-display-bottommiddle {
   margin-bottom: 0 !important;
@@ -482,6 +490,7 @@ nav {
     left: 50%;
     transform: translateX(-50%); }
   .social-media-section .fb-page {
+    z-index: -1;
     opacity: 0;
     position: absolute;
     top: 140px;
@@ -528,7 +537,8 @@ nav {
 
 .map {
   position: relative;
-  height: 415px; }
+  height: 415px;
+  margin-top: 50px; }
   .map #map {
     position: absolute;
     height: 100%;
@@ -767,6 +777,9 @@ nav {
   .services-banner .scroll-container {
     min-width: 1540px; }
 
+.contact-header .title {
+  right: 0; }
+
 .contact-page-section {
   position: relative;
   width: 90%;
@@ -828,20 +841,22 @@ nav {
 .submit-form {
   width: 90%;
   margin: 0 auto; }
-  .submit-form button {
+  .submit-form input[type="submit"] {
     position: relative;
-    right: 8.3333%;
     float: right;
-    background-color: #FF670B;
-    border-radius: 3px;
+    outline: 0;
     border: 0;
+    border-radius: 3px;
     width: 176px;
     height: 55px;
     color: #FFF;
     font-size: 20px;
-    line-height: 27px; }
-    .submit-form button:hover {
+    line-height: 27px;
+    background-color: #FF670B; }
+    .submit-form input[type="submit"]:hover {
       background-color: #F35B00; }
+    .submit-form input[type="submit"]:active {
+      top: 2px; }
 
 @media screen and (min-width: 601px) {
   .booking-form {
@@ -855,3 +870,16 @@ nav {
       height: calc(100% - 4px); }
   .submit-form button {
     right: 0; } }
+
+.gallery-banner {
+  background: #ff690b;
+  height: 87px;
+  padding-top: 18px; }
+  .gallery-banner .content {
+    text-align: center; }
+  .gallery-banner img {
+    display: inline-block; }
+
+.gallery-section {
+  width: 90%;
+  margin: 30px auto; }

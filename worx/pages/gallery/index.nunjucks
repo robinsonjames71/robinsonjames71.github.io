@@ -1,0 +1,54 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header gallery-header">
+        <img srcset="/images/headers/gallery-head.jpg 1680w,
+                     /images/headers/gallery-head@0.jpg 840w,
+                     /images/headers/gallery-head@1.jpg 2520w,
+                     /images/headers/gallery-head@2x.jpg 3360w"
+                src="/images/headers/gallery-head.jpg"
+                class="preview"
+                alt="Worx Auto Gallery Reservoir">
+        <div class="title-container">
+            <div class="w3-col s5 title">
+                <h2>Gallery</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row gallery-banner">
+        <div class="w3-col s4">
+            <div class="content google-plus">
+                <a href="https://plus.google.com/107514218448574641880/about">
+                    <img src="/images/icons/google-plus.svg" width="83" height="55" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content facebook">
+                <a href="https://www.facebook.com/WorxAutomotive">
+                    <img src="/images/icons/facebook.svg" width="59" height="56" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content instagram">
+                <a href="https://instagram.com/worxauto/">
+                    <img src="/images/icons/instagram-white.svg" width="61" height="56" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row gallery-section">
+        <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/bf0bdc3c05b75846b2f75e68f1c63ab9.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}
