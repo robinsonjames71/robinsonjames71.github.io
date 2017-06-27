@@ -1,0 +1,126 @@
+@keyframes fadein {
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
+
+@keyframes moveup {
+  from {
+    padding-top: 40px; }
+  to {
+    padding-top: 0; } }
+
+@keyframes moveleft {
+  from {
+    padding-left: 40px; }
+  to {
+    padding-left: 0; } }
+
+@keyframes moveright {
+  from {
+    padding-right: 40px; }
+  to {
+    padding-right: 0; } }
+
+@keyframes zoomin {
+  from {
+    transform: scale(0.8, 0.8); }
+  to {
+    transform: scale(1, 1); } }
+
+.animation-s.anim-fade-in {
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-name: fadein; }
+  .animation-s.anim-fade-in.animation-started {
+    animation-play-state: running; }
+
+.animation-s.anim-move-up::before {
+  content: "";
+  display: block;
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-name: moveup; }
+
+.animation-s.anim-move-up.animation-started::before {
+  animation-play-state: running; }
+
+.animation-s.anim-move-left {
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-name: moveleft; }
+  .animation-s.anim-move-left.animation-started {
+    animation-play-state: running; }
+
+.animation-s.anim-move-right {
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-name: moveright; }
+  .animation-s.anim-move-right.animation-started {
+    animation-play-state: running; }
+
+.animation-s.anim-zoom-in {
+  animation-play-state: paused;
+  animation-duration: 2s;
+  animation-name: zoomin; }
+  .animation-s.anim-zoom-in.animation-started {
+    animation-play-state: running; }
+
+@media only screen and (min-width: 600px) {
+  .animation-m.anim-fade-in {
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-name: fadein; }
+    .animation-m.anim-fade-in.animation-started {
+      animation-play-state: running; }
+  .animation-m.anim-move-up::before {
+    content: "";
+    display: block;
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-name: moveup; }
+  .animation-m.anim-move-up.animation-started::before {
+    animation-play-state: running; }
+  .animation-m.anim-move-left {
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-name: moveleft; }
+    .animation-m.anim-move-left.animation-started {
+      animation-play-state: running; }
+  .animation-m.anim-move-right {
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-name: moveright; }
+    .animation-m.anim-move-right.animation-started {
+      animation-play-state: running; }
+  .animation-m.anim-zoom-in {
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-name: zoomin; }
+    .animation-m.anim-zoom-in.animation-started {
+      animation-play-state: running; } }
+
+/*
+ Product's sections animations
+
+ Setup the animation on product section:
+    1) Enable animations on the DOM node:
+        Add the ".animated-XX" class to the element you wish to animate.
+        - ".animated-xs": Trigger animation for sizes XS and up.
+        - ".animated-sm": Trigger animation for sizes SM and up.
+        - ".animated-md": Trigger animation for sizes MD and up.
+
+    2) Select an animation type:
+        - Fade-in: Add the ".anim-fade-in" class to the element.
+        - Move-up: Add the ".anim-move-up" class to the element.
+
+    3) Select a trigger:
+        - ".anim-trigger-top-in-view": Trigger animation when top of the div appears in the viewport.
+
+    Other:
+        Page dependencies:
+            - Waypoints
+            - products-animations.js
+            - products-animations.css
+
+ */

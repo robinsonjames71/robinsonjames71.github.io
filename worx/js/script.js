@@ -50,10 +50,6 @@ function showDivs(n) {
         })
     })
 
-    $('.w3-row img').on('load', function(){
-        $(this).addClass('loaded');
-    })
-
 })();
 
 // When the window has finished loading create our google map below

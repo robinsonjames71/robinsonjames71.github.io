@@ -76,8 +76,9 @@
                      /images/about-section/european-car-service-shop-desktop@0.jpg 840w,
                      /images/about-section/european-car-service-shop-desktop@1.jpg 2520w,
                      /images/about-section/european-car-service-shop-desktop@2x.jpg 3360w"
-                src="/images/about-section/european-car-service-shop-desktop.jpg">
-        <div class="w3-col w3-right s6">
+                src="/images/about-section/european-car-service-shop-desktop.jpg"
+                class="animation-s anim-zoom-in anim-trigger-top-in-view" >
+        <div class="w3-col w3-right s6 animation-s anim-move-up anim-trigger-top-in-view">
             <div class="content">
                 <div class="title">
                     <p>Welcome To</p>
@@ -121,7 +122,7 @@
             <div class="fb-page" data-href="https://www.facebook.com/WorxAutomotive/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WorxAutomotive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WorxAutomotive/">Worx Automotive</a></blockquote></div>
         </div>
         <div class="w3-col s6">
-            <div class="content">
+            <div class="content animation-s anim-move-right anim-trigger-top-in-view">
                 <img srcset="/images/social-media/european-car-mechanic-mini.jpg 840w,
                              /images/social-media/european-car-mechanic-mini@0.jpg 420w,
                              /images/social-media/european-car-mechanic-mini@1.jpg 1260w,
@@ -130,7 +131,7 @@
             </div>
         </div>
         <div class="w3-col s6">
-            <div class="content">
+            <div class="content animation-s anim-move-left anim-trigger-top-in-view">
                 <img srcset="/images/social-media/european-car-mechanic-bmw.jpg 840w,
                              /images/social-media/european-car-mechanic-bmw@0.jpg 420w,
                              /images/social-media/european-car-mechanic-bmw@1.jpg 1260w,

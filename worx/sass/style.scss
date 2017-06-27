@@ -20,13 +20,7 @@ p {
 img {
     display: block;
     width: auto;
-    transition: all 0.2s ease-in-out;
-    transform: scale(0.8,0.8);
 }
-img.loaded {
-    transform: scale(1,1);
-}
-
 
 // Navigation Section
 .nav-placeholder {
@@ -919,7 +913,7 @@ nav {
         padding-top: 10px;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 993px) {
     .servicing-vehicle {
         display: flex;
         align-items: center;

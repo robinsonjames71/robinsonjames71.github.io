@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/products-animations.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -85,13 +86,13 @@
 </nav>
 
     <div class="w3-display-container header">
-            <img srcset="/images/headers/services-head.jpg 1680w,
-                         /images/headers/services-head@0.jpg 840w,
-                         /images/headers/services-head@1.jpg 2520w,
-                         /images/headers/services-head@2x.jpg 3360w"
-                    src="/images/headers/services-head.jpg"
-                    class="preview"
-                    alt="Worx Auto Services Reservoir">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Services Reservoir">
         <div class="title-container">
             <div class="w3-col s4 title">
                 <h2>Services</h2>
@@ -111,18 +112,18 @@
     </div>
 
     <div class="w3-row servicing-vehicle">
-        <div class="w3-row w3-col s10 m6 images">
+        <div class="w3-row w3-col s10 l6 images">
             <div class="w3-col s10 behind left">
-                <img srcset="/images/services-page/shop-outside@2x.jpg" src="/images/services-page/shop-outside.jpg" alt="">
+                <img srcset="/images/services-page/shop-outside@2x.jpg" src="/images/services-page/shop-outside.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
             </div>
             <div class="w3-col s10 over right">
-                <img srcset="/images/services-page/shop@2x.jpg" src="/images/services-page/shop.jpg" alt="">
+                <img srcset="/images/services-page/shop@2x.jpg" src="/images/services-page/shop.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
             </div>
             <div class="w3-col s10 bg-border"></div>
         </div>
-        <div class="w3-col s0 m1">
+        <div class="w3-col s0 l1">
         </div>
-        <div class="w3-col s10 m5">
+        <div class="w3-col s10 l5">
             <h2>Vehicle Servicing</h2>
             <p>It's important to keep up with the scheduled maintenance requirements of your car to ensure long-term performance, efficiency, safety and peace of mind.</p>
             <p>When servicing your vehicle with Worx Automotive, we complete a comprehensive safety check and advise of any areas that require immediate attention, or may cause issues in the future. This information will provide you with a clear image of the condition of your car, while we continue to ensure it's reliability between services.</p>
@@ -145,7 +146,7 @@
     </div>
 
     <div class="w3-row servicing-vehicle">
-        <div class="w3-col s10 m5">
+        <div class="w3-col s10 l5">
             <h2>Vehicle Repairs</h2>
             <p>Whether your vehicle is due for a scheduled service or requires our services due to other unforeseen circumstances, the team at Worx Automotive will undertake a detailed safety inspection of your car and advise of any immediate or upcoming repairs required.</p>
             <p>All repairs undertaken by Worx Automotive are completed at the highest standard, with genuine or high quality aftermarket parts to ensure the quality of repair. Other important factors include:</p>
@@ -158,14 +159,14 @@
             </ul>
             <p>Please contact us to discuss your car repair options.</p>
         </div>
-        <div class="w3-col s0 m1">
+        <div class="w3-col s0 l1">
         </div>
-        <div class="w3-col s10 m6 images">
+        <div class="w3-col s10 l6 images">
             <div class="w3-col s10 behind right">
-                <img srcset="/images/services-page/repair-car@2x.jpg" src="/images/services-page/repair-car.jpg" alt="">
+                <img srcset="/images/services-page/repair-car@2x.jpg" src="/images/services-page/repair-car.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
             </div>
             <div class="w3-col s10 over left">
-                <img srcset="/images/services-page/repair-shop@2x.jpg" src="/images/services-page/repair-shop.jpg" alt="">
+                <img srcset="/images/services-page/repair-shop@2x.jpg" src="/images/services-page/repair-shop.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
             </div>
             <div class="w3-col s10 bg-border"></div>
         </div>
@@ -193,6 +194,8 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+    <script src="/js/products-animations.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
