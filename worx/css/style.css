@@ -193,6 +193,7 @@ nav {
   height: 62px;
   float: left; }
   .subnav .subnav-link {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -208,9 +209,27 @@ nav {
       text-transform: uppercase;
       text-decoration: none;
       height: 25px;
-      line-height: 25px; }
+      line-height: 25px;
+      transition: color 0.2s; }
+    .subnav .subnav-link a:hover {
+      color: #ff690b; }
     .subnav .subnav-link:last-child {
       border-right: 0; }
+  .subnav .services:hover .services-dropdown {
+    max-height: 195px; }
+  .subnav .services-dropdown {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s; }
+    .subnav .services-dropdown li {
+      list-style-type: none;
+      margin: 10px 0; }
+  .subnav .services-dropdown:hover {
+    max-height: 195px; }
 
 @media screen and (min-width: 550px) {
   .worx-logo {

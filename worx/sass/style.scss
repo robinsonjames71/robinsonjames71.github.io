@@ -216,6 +216,7 @@ nav {
     float: left;
 
     .subnav-link {
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -230,11 +231,35 @@ nav {
             text-decoration: none;
             height: 25px;
             line-height: 25px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff690b;
         }
 
         &:last-child {
             border-right: 0;
         }
+    }
+    .services:hover .services-dropdown {
+        max-height: 195px;
+    }
+    .services-dropdown {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        background-color: #1a1a1a;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.2s;
+
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+    }
+    .services-dropdown:hover {
+        max-height: 195px;
     }
 }
 @media screen and (min-width: 550px) {
