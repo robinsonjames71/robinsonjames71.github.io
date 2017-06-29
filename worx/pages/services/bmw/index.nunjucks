@@ -21,12 +21,25 @@
 
     <div class="w3-row brands-banner">
         <div class="scroll-container">
-            <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
-            <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
-            <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt="">
-            <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
-            <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
-            <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
+            <a href="/services/audi">
+                <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
+            </a>
+            <a href="/services/bmw">
+                <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
+            </a>
+            <a href="/services/volkswagon">
+                <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt=""
+            >
+            </a>
+            <a href="/services/ferrari">
+                <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
+            </a>
+            <a href="/services/mercedes-benz">
+                <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
+            </a>
+            <a href="/services/mini-cooper">
+                <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
+            </a>
         </div>
     </div>
 
@@ -52,7 +65,7 @@
             <p>From an Audi TT to a BMW Mini, Melbourne trusts <a href="http://www.worxauto.com.au/">Worx Automotive</a> to ensure long-term performance, safety, efficiency and peace of mind. Whether you need a routine BMW service or some unexpected repairs, we’ll give you a comprehensive safety inspection and can provide genuine aftermarket parts as required. Choose us and rest easy know your needs are always put first with the preferred BMW repairs and service provider in Melbourne!</p>
             <h3>MAKE A BOOKING</h3>
             <p>Call (03) 9387 4440 or email <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a> to make any enquiries and schedule a service with a Worx BMW specialist in Melbourne. Be sure to <a href="https://www.facebook.com/WorxAutomotive?fref=ts">check out our Facebook page</a> for news, photos and reviews.</p>
-            <p>We are located at 353 Albert st, Brunswick, within walking distance of the shops on Sydney Rd and Brunswick train station.</p>
+            <p>We are located at 130 Henty Street, Reservoir.</p>
         </div>
     </div>
 

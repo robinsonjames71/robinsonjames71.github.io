@@ -252,7 +252,14 @@ nav {
         overflow: hidden;
         max-height: 0;
         transition: all 0.2s;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
+        ul {
+            margin: 0;
+            padding: 0;
+        }
         li {
             list-style-type: none;
             margin: 10px 0;
@@ -528,6 +535,10 @@ nav {
     height: 135px;
 
     width: 100vw;
+
+    a {
+        cursor: pointer;
+    }
 }
 
 .social-media-section {

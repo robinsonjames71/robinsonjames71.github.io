@@ -21,12 +21,25 @@
 
     <div class="w3-row brands-banner">
         <div class="scroll-container">
-            <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
-            <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
-            <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt="">
-            <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
-            <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
-            <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
+            <a href="/services/audi">
+                <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
+            </a>
+            <a href="/services/bmw">
+                <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
+            </a>
+            <a href="/services/volkswagon">
+                <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt=""
+            >
+            </a>
+            <a href="/services/ferrari">
+                <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
+            </a>
+            <a href="/services/mercedes-benz">
+                <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
+            </a>
+            <a href="/services/mini-cooper">
+                <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
+            </a>
         </div>
     </div>
 
@@ -49,7 +62,7 @@
             <h3>COME TO THE MINI COOPER MECHANIC THAT PUTS YOUR NEEDS FIRST</h3>
             <p>We take pride in our customer service and have worked hard to build a reputation among both private and corporate clients for quality Mini Cooper service and repair in Melbourne. Our focus is to give you 100% satisfaction in everything that we do, whether it be a quick service, a post-accident repair or anything in between. This is all part of our commitment to <a href="http://www.worxauto.com.au/">transparent, professional mechanic services</a> that give you a better understanding of your car, no matter the make or model.</p>
             <h3>GIVE US A CALL AND BOOK IN WITH AN EXPERT MECHANIC</h3>
-            <p>Whether you are ready to book or just have a quick question, please don’t hesitate to get in touch by calling (03) 9387 4440, emailing <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a> or <a href="https://www.facebook.com/WorxAutomotive?fref=ts">following us on Facebook</a>. Our Mini service specialist workshop is located in Melbourne’s north at 353 Albert st, Brunswick—within walking distance of Brunswick train station and Sydney rd.</p>
+            <p>Whether you are ready to book or just have a quick question, please don’t hesitate to get in touch by calling (03) 9387 4440, emailing <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a> or <a href="https://www.facebook.com/WorxAutomotive?fref=ts">following us on Facebook</a>. Our Mini service specialist workshop is located in Melbourne’s north at 130 Henty Street, Reservoir.</p>
         </div>
     </div>
 

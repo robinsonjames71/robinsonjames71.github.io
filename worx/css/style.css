@@ -224,7 +224,16 @@ nav {
     background-color: #1a1a1a;
     overflow: hidden;
     max-height: 0;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .subnav .services-dropdown ul {
+      margin: 0;
+      padding: 0; }
     .subnav .services-dropdown li {
       list-style-type: none;
       margin: 10px 0; }
@@ -440,6 +449,8 @@ nav {
   align-items: center;
   height: 135px;
   width: 100vw; }
+  .brands-banner a {
+    cursor: pointer; }
 
 .social-media-section {
   position: relative;
