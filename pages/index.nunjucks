@@ -1,0 +1,212 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <div id="fb-root"></div>
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container carousel">
+        <div class="carousel-slides video">
+            <img srcset="/images/carousel/mechanic-video.jpg 1680w,
+                         /images/carousel/mechanic-video@0.jpg 840w,
+                         /images/carousel/mechanic-video@1.jpg 2520w,
+                         /images/carousel/mechanic-video@2x.jpg 3360w"
+                    src="/images/carousel/mechanic-video.jpg"
+                    class="preview"
+                    alt="Worx Auto Mechanic Reservoir">
+            <img class="play-btn" src="/images/carousel/play-btn.svg" alt="Play Video Button">
+            <iframe class="embedded-video" width="560" height="315" src="https://www.youtube.com/embed/aA7P2SfjBr8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <img srcset="/images/carousel/mechanic-bmw.jpg 1680w,
+                     /images/carousel/mechanic-bmw@0.jpg 840w,
+                     /images/carousel/mechanic-bmw@1.jpg 2520w,
+                     /images/carousel/mechanic-bmw@2x.jpg 3360w"
+                src="/images/carousel/mechanic-bmw.jpg"
+                class="carousel-slides"
+                alt="alt">
+        <img srcset="/images/carousel/mechanic-resevoir.jpg 1680w,
+                     /images/carousel/mechanic-resevoir@0.jpg 840w,
+                     /images/carousel/mechanic-resevoir@1.jpg 2520w,
+                     /images/carousel/mechanic-resevoir@2x.jpg 3360w"
+                src="/images/carousel/mechanic-resevoir.jpg"
+                class="carousel-slides"
+                alt="alt">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="arrow w3-left" onclick="plusDivs(-1)">
+                <img src="/images/carousel/left-arrow.svg" alt="">
+            </div>
+            <div class="arrow w3-right" onclick="plusDivs(1)">
+                <img src="/images/carousel/right-arrow.svg" alt="">
+            </div>
+            <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+    <div class="w3-row contact-banner">
+        <div class="w3-col s4">
+            <div class="content contact-us">
+                <a href="/contact/">
+                    <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
+                    <p><strong>Contact Us</strong></p>
+                    <p>03 9387 4440</p>
+                    <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content address">
+                <a href="/contact/">
+                    <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
+                    <p><strong>Address</strong></p>
+                    <p>353 Albert St, Brunswick,</p>
+                    <p>Victoria, 3056</p>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content hours">
+                <a href="/contact/">
+                    <img src="/images/contact-banner/mechanic-hours.svg" width="49" height="49" alt="">
+                    <p><strong>Business Hours</strong></p>
+                    <p>Monday to Friday</p>
+                    <p>8:00am - 5:00pm</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row about-section">
+        <img srcset="/images/about-section/european-car-service-shop-desktop.jpg 1680w,
+                     /images/about-section/european-car-service-shop-desktop@0.jpg 840w,
+                     /images/about-section/european-car-service-shop-desktop@1.jpg 2520w,
+                     /images/about-section/european-car-service-shop-desktop@2x.jpg 3360w"
+                src="/images/about-section/european-car-service-shop-desktop.jpg"
+                class="animation-s anim-zoom-in anim-trigger-top-in-view" >
+        <div class="w3-col w3-right s6 animation-s anim-move-up anim-trigger-top-in-view">
+            <div class="content">
+                <div class="title">
+                    <p>Welcome To</p>
+                    <h3>Worx Automotive</h3>
+                </div>
+                <img srcset="/images/about-section/service-shop-mechanic.jpg 360w,
+                     /images/about-section/service-shop-mechanic@2x.jpg 720w"
+                     src="/images/about-section/service-shop-mechanic.jpg" alt="">
+                <p>We take pride in our in-depth knowledge of the industry and focus on going above and beyond the expectations of our clients. Our quality European car repairs and services in Melbourne are matched by the professional advice we give to help you maintain your vehicle and reduce long term costs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row brands-banner">
+        <div class="scroll-container">
+            <a href="/services/audi">
+                <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
+            </a>
+            <a href="/services/bmw">
+                <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
+            </a>
+            <a href="/services/volkswagon">
+                <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt=""
+            >
+            </a>
+            <a href="/services/ferrari">
+                <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
+            </a>
+            <a href="/services/mercedes-benz">
+                <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
+            </a>
+            <a href="/services/mini-cooper">
+                <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="w3-row social-media-section">
+        <div class="circle">
+            <div class="semicircle left-semicircle">
+                <div class="facebook">
+                    <img src="/images/icons/facebook.svg" width="39" height="35" alt="">
+                    <p>Facebook Page</p>
+                </div>
+            </div>
+            <div class="semicircle right-semicircle">
+                <a href="/gallery/">
+                <div class="instagram">
+                    <img src="/images/icons/instagram.svg" width="39" height="35" alt="">
+                    <p>Instagram Gallery</p>
+                </div>
+                </a>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/WorxAutomotive/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WorxAutomotive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WorxAutomotive/">Worx Automotive</a></blockquote></div>
+        </div>
+        <div class="w3-col s6">
+            <div class="content animation-s anim-move-right anim-trigger-top-in-view">
+                <img srcset="/images/social-media/european-car-mechanic-mini.jpg 840w,
+                             /images/social-media/european-car-mechanic-mini@0.jpg 420w,
+                             /images/social-media/european-car-mechanic-mini@1.jpg 1260w,
+                             /images/social-media/european-car-mechanic-mini@2x.jpg 1680w"
+                        src="/images/social-media/european-car-mechanic-mini.jpg">
+            </div>
+        </div>
+        <div class="w3-col s6">
+            <div class="content animation-s anim-move-left anim-trigger-top-in-view">
+                <img srcset="/images/social-media/european-car-mechanic-bmw.jpg 840w,
+                             /images/social-media/european-car-mechanic-bmw@0.jpg 420w,
+                             /images/social-media/european-car-mechanic-bmw@1.jpg 1260w,
+                             /images/social-media/european-car-mechanic-bmw@2x.jpg 1680w"
+                        src="/images/social-media/european-car-mechanic-bmw.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row services-banner">
+        <div class="w3-col s4">
+            <div class="content">
+                <a href="/services#repairs">
+                    <img src="/images/services-banner/vehicle-repair.svg" width="49" height="51" alt="">
+                    <p>Vehicle Repair</p>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content">
+                <a href="/services#servicing">
+                    <img src="/images/services-banner/vehicle-servicing.svg" width="50" height="50" alt="">
+                    <p>Vehicle Servicing</p>
+                </a>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="content">
+                <a href="/services/">
+                    <img src="/images/services-banner/vehicle-mechanic.svg" width="51" height="50" alt="">
+                    <p>Experience</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row map">
+        <div id="map"></div>
+        <div class="w3-col s6"></div>
+        <div class="w3-col s4 location">
+            <div class="content">
+                <h3>NEW LOCATION!</h3>
+                <p>130 HENTY STREET, <br>RESERVOIR 3073</p>
+                <p>Visit Us Today!</p>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=10153537110783429";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuEKvCCeFcsqDak-R9JOnqclDN2cxtBU8"></script>
+{% endblock %}
