@@ -322,9 +322,13 @@ nav {
 .carousel {
     position: relative;
     width: 100vw;
+    overflow: hidden;
+
+    .carousel-slides {
+        position: relative;
+    }
 
     .video {
-        position: relative;
         width: 100vw;
         height: 100%;
     }
