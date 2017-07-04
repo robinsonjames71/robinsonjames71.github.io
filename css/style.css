@@ -106,7 +106,7 @@ nav {
 
 .mobile-menu {
   position: absolute;
-  top: 120px;
+  top: 110px;
   width: 100vw;
   background-color: #1a1a1a;
   z-index: 200;
@@ -708,7 +708,7 @@ nav {
     content: '';
     width: 100%;
     padding-bottom: 36.1757%;
-    max-height: 140px;
+    height: 130%;
     max-width: 387px;
     background-color: rgba(0, 0, 0, 0.4); }
   .header .title {
@@ -734,7 +734,14 @@ nav {
 @media screen and (min-width: 601px) {
   .header h2 {
     font-size: 4vw;
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+  .header .title:before {
+    height: auto;
+    max-height: 140px; }
+  .header .mercedes h2,
+  .header .mini-cooper h2,
+  .header .volkswagon h2 {
+    top: 40px; } }
 
 @media screen and (min-width: 1001px) {
   .header h2 {

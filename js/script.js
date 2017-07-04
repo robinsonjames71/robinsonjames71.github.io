@@ -1,21 +1,47 @@
 var slideIndex = 1;
 var clicked = false;
 showDivs(slideIndex);
+var animateObject = {
+    'left': 'auto',
+    'right': 'auto'
+};
+var animateObjectReverse = {};
 
-function plusDivs(n) {
+function plusDivs(n, direction) {
+    var direction = direction == 1 ? 'left' : 'right';
+    animateObject[direction] = 0;
+    if(direction == 'left') {
+        animateObject['right'] = 'auto';
+        animateObjectReverse[direction] = '-100vw';
+    } else if (direction == 'right') {
+        animateObject['left'] = 'auto';
+        animateObjectReverse['left'] = '100vw';
+    }
     clicked = true;
-    $($('.carousel-slides')[slideIndex-1]).css({'left': 0}).animate({
-        'left': '-100vw'
-    })
-    showDivs(slideIndex += n);
+    $($('.carousel-slides')[slideIndex-1]).css(animateObject).animate(animateObjectReverse);
+    showDivs(slideIndex += n, direction);
 }
 
 function currentDiv(n) {
+    console.log('n ', n);
+    console.log('[slideIndex-1] ', [slideIndex-1]);
+    var direction;
     clicked = true;
-    showDivs(slideIndex = n);
+    if (n > [slideIndex-1]) {
+        direction = 'right';
+        animateObject['right'] = 'auto';
+        animateObjectReverse['left'] = '-100vw';
+    } else {
+        direction = 'left';
+        animateObject['left'] = 'auto';
+        animateObjectReverse['left'] = '100vw';
+    }
+    animateObject[direction] = 0;
+    $($('.carousel-slides')[slideIndex-1]).css(animateObject);
+    showDivs(slideIndex = n, direction);
 }
 
-function showDivs(n) {
+function showDivs(n, direction) {
     var i;
     var slide = $('.carousel-slides');
     if(slide.length > 0) {
@@ -35,11 +61,18 @@ function showDivs(n) {
            dots[i].className = dots[i].className.replace(" w3-white", "");
         }
         $(slide[slideIndex-1]).show();
+
+        var cssObject = {
+            'position': 'absolute',
+            'z-index': 2,
+            'top': 0,
+            'left': 'auto',
+            'right': 'auto'
+        }
+        cssObject[direction] = '100vw';
         if(clicked) {
-            $(slide[slideIndex-1]).css({'position': 'absolute', 'z-index': 2, 'top': 0, 'left': '100vw'}).animate({
-                'left': 0
-            }, function(){
-                $(slide[slideIndex-1]).css({'position': 'relative', 'z-index': 1});
+            $(slide[slideIndex-1]).css(cssObject).animate(animateObject, function(){
+                $(slide[slideIndex-1]).css({'position': 'relative', 'z-index': 1, 'left': 0, 'right': 'auto'});
                 for (i = 0; i < slide.length; i++) {
                     if(i == (slideIndex - 1)) {
                         continue;
@@ -75,7 +108,5 @@ function showDivs(n) {
             })
         })
     })
-
-    $('.services-banner')
 
 })();

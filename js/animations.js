@@ -63,4 +63,28 @@ $(function() {
 
         addWaypoints();
     });
+
+
+    animateBanner();
+    function animateBanner(element) {
+        var animateAmount = (($(element).width() - $(window).innerWidth()) / $(element).width()) * 100;
+        if($(window).innerWidth() < $(element).width()) {
+          $(element)
+              .css({'margin-left': animateAmount + 'vw'})
+              .animate({'margin-left': '-' + animateAmount + 'vw'}, 20000)
+              .animate({'margin-left': animateAmount + '-100vw'}, 20000, animateBanner);
+        }
+    }
+
+    $('.scroll-container').waypoint({
+      handler: function(direction) {
+        if (direction == 'down') {
+            animateBanner($(this));
+        }
+      },
+      offset: function() {
+        return $(window).height();
+      }
+    });
+
 });

@@ -12,8 +12,8 @@
                 src="/images/headers/services-head.jpg"
                 class="preview"
                 alt="Worx Auto Volkswagon Service">
-        <div class="title-container">
-            <div class="w3-col s4 title">
+        <div class="title-container volkswagon">
+            <div class="w3-col s6 title">
                 <h2>Volkswagon Service</h2>
             </div>
         </div>

@@ -105,5 +105,6 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuEKvCCeFcsqDak-R9JOnqclDN2cxtBU8"></script>
+    <script src="/js/maps.js"></script>
 
 {% endblock %}
