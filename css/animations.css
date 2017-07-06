@@ -1,14 +1,46 @@
 @keyframes fadein {
-  from {
-    opacity: 0.1; }
-  to {
+  0% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 
 @keyframes moveup {
+  0% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes moveupfadein {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes movedownfadein {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes zoomin {
   from {
-    padding-top: 40px; }
+    transform: scale(0.8, 0.8); }
   to {
-    padding-top: 0; } }
+    transform: scale(1, 1); } }
 
 @keyframes moveleft {
   from {
@@ -22,105 +54,166 @@
   to {
     padding-right: 0; } }
 
-@keyframes zoomin {
-  from {
-    transform: scale(0.8, 0.8); }
-  to {
-    transform: scale(1, 1); } }
+.animation-s.anim-name-fadein {
+  opacity: 0;
+  animation-fill-mode: forwards; }
 
-.animation-s.anim-fade-in {
-  animation-play-state: paused;
-  animation-duration: 2s;
-  animation-name: fadein; }
-  .animation-s.anim-fade-in.animation-started {
-    animation-play-state: running; }
+.animation-s.anim-name-zoomin {
+  animation-fill-mode: forwards; }
 
-.animation-s.anim-move-up::before {
-  content: "";
-  display: block;
-  animation-play-state: paused;
-  animation-duration: 2s;
-  animation-name: moveup; }
+.animation-s.anim-name-moveup {
+  transform: translateY(50px);
+  animation-fill-mode: forwards; }
 
-.animation-s.anim-move-up.animation-started::before {
-  animation-play-state: running; }
+.animation-s.anim-name-movedown {
+  transform: translateY(-50px);
+  animation-fill-mode: forwards; }
 
-.animation-s.anim-move-left {
-  animation-play-state: paused;
-  animation-duration: 2s;
-  animation-name: moveleft; }
-  .animation-s.anim-move-left.animation-started {
-    animation-play-state: running; }
+.animation-s.anim-name-moveupfadein {
+  transform: translateY(50px);
+  opacity: 0;
+  animation-fill-mode: forwards; }
 
-.animation-s.anim-move-right {
-  animation-play-state: paused;
-  animation-duration: 2s;
-  animation-name: moveright; }
-  .animation-s.anim-move-right.animation-started {
-    animation-play-state: running; }
-
-.animation-s.anim-zoom-in {
-  animation-play-state: paused;
-  animation-duration: 2s;
-  animation-name: zoomin; }
-  .animation-s.anim-zoom-in.animation-started {
-    animation-play-state: running; }
+.animation-s.anim-name-movedownfadein {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-fill-mode: forwards; }
 
 @media only screen and (min-width: 600px) {
-  .animation-m.anim-fade-in {
-    animation-play-state: paused;
-    animation-duration: 2s;
-    animation-name: fadein; }
-    .animation-m.anim-fade-in.animation-started {
-      animation-play-state: running; }
-  .animation-m.anim-move-up::before {
-    content: "";
-    display: block;
-    animation-play-state: paused;
-    animation-duration: 2s;
-    animation-name: moveup; }
-  .animation-m.anim-move-up.animation-started::before {
-    animation-play-state: running; }
-  .animation-m.anim-move-left {
-    animation-play-state: paused;
-    animation-duration: 2s;
-    animation-name: moveleft; }
-    .animation-m.anim-move-left.animation-started {
-      animation-play-state: running; }
-  .animation-m.anim-move-right {
-    animation-play-state: paused;
-    animation-duration: 2s;
-    animation-name: moveright; }
-    .animation-m.anim-move-right.animation-started {
-      animation-play-state: running; }
-  .animation-m.anim-zoom-in {
-    animation-play-state: paused;
-    animation-duration: 2s;
-    animation-name: zoomin; }
-    .animation-m.anim-zoom-in.animation-started {
-      animation-play-state: running; } }
+  .animation-m.anim-name-fadein {
+    opacity: 0;
+    animation-fill-mode: forwards; }
+  .animation-m.anim-name-zoomin {
+    animation-fill-mode: forwards; }
+  .animation-m.anim-name-moveup {
+    transform: translateY(50px);
+    animation-fill-mode: forwards; }
+  .animation-m.anim-name-movedown {
+    transform: translateY(-50px);
+    animation-fill-mode: forwards; }
+  .animation-m.anim-name-moveupfadein {
+    transform: translateY(50px);
+    opacity: 0;
+    animation-fill-mode: forwards; }
+  .animation-m.anim-name-movedownfadein {
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-fill-mode: forwards; } }
+
+.anim-del-0 {
+  animation-delay: 0s; }
+
+.anim-del-250 {
+  animation-delay: 0.25s; }
+
+.anim-del-500 {
+  animation-delay: 0.5s; }
+
+.anim-del-750 {
+  animation-delay: 0.75s; }
+
+.anim-del-1000 {
+  animation-delay: 1s; }
+
+.anim-del-1250 {
+  animation-delay: 1.25s; }
+
+.anim-del-1500 {
+  animation-delay: 1.5s; }
+
+.anim-del-1750 {
+  animation-delay: 1.75s; }
+
+.anim-del-2000 {
+  animation-delay: 2s; }
+
+.anim-del-2250 {
+  animation-delay: 2.25s; }
+
+.anim-del-2500 {
+  animation-delay: 2.5s; }
+
+.anim-del-2750 {
+  animation-delay: 2.75s; }
+
+.anim-del-3000 {
+  animation-delay: 3s; }
+
+.anim-dur-250 {
+  animation-duration: 0.25s; }
+
+.anim-dur-500 {
+  animation-duration: 0.5s; }
+
+.anim-dur-750 {
+  animation-duration: 0.75s; }
+
+.anim-dur-1000 {
+  animation-duration: 1s; }
+
+.anim-dur-1250 {
+  animation-duration: 1.25s; }
+
+.anim-dur-1500 {
+  animation-duration: 1.5s; }
+
+.anim-dur-1750 {
+  animation-duration: 1.75s; }
+
+.anim-dur-2000 {
+  animation-duration: 2s; }
+
+.anim-dur-2250 {
+  animation-duration: 2.25s; }
+
+.anim-dur-2500 {
+  animation-duration: 2.5s; }
+
+.anim-dur-2750 {
+  animation-duration: 2.75s; }
+
+.anim-dur-3000 {
+  animation-duration: 3s; }
+
+.anim-linear {
+  animation-timing-function: linear; }
+
+.anim-easeout {
+  animation-timing-function: ease-out; }
+
+.anim-easein {
+  animation-timing-function: ease-in; }
+
+.anim-easeinout {
+  animation-timing-function: ease-in-out; }
 
 /*
- Product's sections animations
+Setup the animation on product section:
 
- Setup the animation on product section:
     1) Enable animations on the DOM node:
-        Add the ".animated-XX" class to the element you wish to animate.
-        - ".animated-xs": Trigger animation for sizes XS and up.
-        - ".animated-sm": Trigger animation for sizes SM and up.
-        - ".animated-md": Trigger animation for sizes MD and up.
+        Add the ".anim-XX" class to the element you wish to animate.
+        - ".anim-xs": Trigger animation for sizes XS and up.
+        - ".anim-sm": Trigger animation for sizes SM and up.
+        - ".anim-md": Trigger animation for sizes MD and up.
 
     2) Select an animation type:
-        - Fade-in: Add the ".anim-fade-in" class to the element.
-        - Move-up: Add the ".anim-move-up" class to the element.
+        - Fade-in: Add the ".anim-fadein" class to the element.
+        - Move-up: Add the ".anim-moveup" class to the element.
+        - Move-down: Add the ".anim-moveup" class to the element.
+        - Move-up Fade-in: Add the ".anim-moveupfadein" class to the element.
+        - Move-down Fade-in: Add the ".anim-movedownfadein" class to the element.
 
-    3) Select a trigger:
-        - ".anim-trigger-top-in-view": Trigger animation when top of the div appears in the viewport.
+    3) Select an animation duration:
+        Add the ".anim-dur-XX" class to set the length of the animation in milliseconds.
 
-    Other:
-        Page dependencies:
-            - Waypoints
-            - products-animations.js
-            - products-animations.css
+    4) Select an animation delay:
+        Add the ".anim-del-XX" class to the animation you wish to delay.
 
+    5) Select a trigger:
+        - ".anim-trig-top": Trigger animation when top of the div appears in the viewport.
+
+    Page dependencies:
+        - Waypoints
+        - products-animations.js
+        - products-animations.css
  */

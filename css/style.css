@@ -285,7 +285,9 @@ nav {
   width: 100vw;
   overflow: hidden; }
   .carousel .carousel-slides {
-    position: relative; }
+    position: absolute; }
+    .carousel .carousel-slides:first-child {
+      position: relative; }
   .carousel .video {
     width: 100vw;
     height: 100%; }

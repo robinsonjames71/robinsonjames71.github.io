@@ -6,7 +6,24 @@ $(function() {
         $('.anim-trigger-top-in-view').waypoint({
           handler: function(direction) {
             if (direction == 'down') {
-                $(this).addClass('animation-started');
+                var classNames = ($(this)[0]).className.split(' ');
+                var animationName = '';
+
+                for(i = 0; i < classNames.length; i++) {
+                    if(classNames[i].indexOf('anim-name-') == 0) {
+                        animationName = classNames[i].split('-').pop();
+                    };
+                }
+                console.log(animationName);
+
+                for(i = 0; i < classNames.length; i++) {
+                    if(classNames[i].indexOf('animation-m') == 0 && $(window).innerWidth() > 600) {
+                        $(this).css("-webkit-animation-name", animationName);
+                    };
+                    if(classNames[i].indexOf('animation-s') == 0) {
+                        $(this).css("-webkit-animation-name", animationName);
+                    };
+                }
             }
           },
           offset: function() {
@@ -63,7 +80,6 @@ $(function() {
 
         addWaypoints();
     });
-
 
     animateBanner();
     function animateBanner(element) {

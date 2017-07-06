@@ -46,10 +46,10 @@
     <div class="w3-row servicing-vehicle">
         <div class="w3-row w3-col s10 l6 images">
             <div class="w3-col s10 behind left">
-                <img srcset="/images/services-page/shop-outside@2x.jpg" src="/images/services-page/shop-outside.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
+                <img srcset="/images/services-page/brands/audi-2@2x.jpg" src="/images/services-page/brands/audi-2.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
             </div>
             <div class="w3-col s10 over right">
-                <img srcset="/images/services-page/shop@2x.jpg" src="/images/services-page/shop.jpg" alt="" class="animation-s anim-fade-in anim-trigger-top-in-view">
+                <img srcset="/images/services-page/brands/audi-1@2x.jpg" src="/images/services-page/brands/audi-1.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
             </div>
             <div class="w3-col s10 bg-border"></div>
         </div>
