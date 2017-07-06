@@ -37,8 +37,7 @@ nav {
     width: 100%; }
   nav p {
     font-size: 14px;
-    line-height: 18px;
-    margin-left: 10px; }
+    line-height: 18px; }
 
 @media screen and (min-width: 700px) {
   .nav-placeholder {
@@ -166,8 +165,8 @@ nav {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #FF670B;
   float: left;
   width: 100%;
@@ -177,6 +176,10 @@ nav {
   .contact p {
     color: #FFF;
     font-weight: 300; }
+    .contact p:first-child {
+      margin-right: 10px; }
+    .contact p:last-child {
+      text-align: right; }
   .contact a,
   .contact a:link,
   .contact a:visited,
@@ -392,7 +395,6 @@ nav {
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
     transform: translateX(-50%);
     height: 100%;
     width: 100%;
@@ -530,6 +532,8 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     width: 300px; }
+  .social-media-section .instagram-pull {
+    display: none; }
 
 .services-banner {
   background: black;
@@ -537,6 +541,7 @@ nav {
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff690b), color-stop(55%, #ff690b), color-stop(55.1%, black), color-stop(100%, black));
   background: linear-gradient(to bottom, #ff690b 0%, #ff690b 55%, black 55.1%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
+  height: 67px;
   padding-top: 5px;
   padding-bottom: 10px; }
   .services-banner .content {
@@ -556,17 +561,32 @@ nav {
     display: inline-block;
     margin-bottom: 5px;
     width: 40px; }
+  .services-banner.servicing {
+    height: 90px; }
 
 @media screen and (min-width: 850px) {
   .services-banner {
+    height: 77px;
     padding-top: 25px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    margin-bottom: 60px; }
     .services-banner img {
       width: auto;
       margin-bottom: 20px; }
     .services-banner p {
       font-size: 24px;
       line-height: 29px; } }
+
+.services-banner {
+  background: #FF670B;
+  padding-top: 14px; }
+  .services-banner h4 {
+    font-size: 22px;
+    line-height: 30px;
+    width: 205px;
+    text-align: center; }
+  .services-banner .scroll-container {
+    min-width: 1540px; }
 
 .map {
   position: relative;
@@ -673,6 +693,10 @@ nav {
   .page-footer .copyright p {
     font-size: 2vw;
     line-height: 2.5vw; } }
+
+@media screen and (min-width: 993px) {
+  .social-media-section .instagram-pull {
+    display: block; } }
 
 @media screen and (min-width: 1430px) {
   .page-footer p {
@@ -805,18 +829,6 @@ nav {
       transform: none; }
     .servicing-vehicle .images {
       padding-bottom: 50%; } }
-
-.services-banner {
-  background: #FF670B;
-  height: 87px;
-  padding-top: 14px; }
-  .services-banner h4 {
-    font-size: 22px;
-    line-height: 30px;
-    width: 205px;
-    text-align: center; }
-  .services-banner .scroll-container {
-    min-width: 1540px; }
 
 .contact-header .title {
   right: 0; }

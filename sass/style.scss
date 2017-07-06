@@ -41,7 +41,6 @@ nav {
     p {
         font-size: 14px;
         line-height: 18px;
-        margin-left: 10px;
     }
 }
 
@@ -186,7 +185,7 @@ nav {
 .contact {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #FF670B;
     float: left;
     width: 100%;
@@ -197,6 +196,13 @@ nav {
     p {
         color: #FFF;
         font-weight: 300;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+        &:last-child {
+            text-align: right;
+        }
     }
 
     a,
@@ -469,7 +475,6 @@ nav {
         display: block;
         position: absolute;
         top: 0;
-        left: 50%;
         transform: translateX(-50%);
         height: 100%;
         width: 100%;
@@ -642,6 +647,9 @@ nav {
         transform: translateX(-50%);
         width: 300px;
     }
+    .instagram-pull {
+        display: none;
+    }
 }
 
 .services-banner {
@@ -655,6 +663,7 @@ nav {
     background: linear-gradient(to bottom, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
 
+    height: 67px;
     padding-top: 5px;
     padding-bottom: 10px;
 
@@ -679,11 +688,16 @@ nav {
         margin-bottom: 5px;
         width: 40px;
     }
+    &.servicing {
+        height: 90px;
+    }
 }
 @media screen and (min-width: 850px) {
     .services-banner {
+        height: 77px;
         padding-top: 25px;
         padding-bottom: 25px;
+        margin-bottom: 60px;
 
         img {
             width: auto;
@@ -693,6 +707,20 @@ nav {
             font-size: 24px;
             line-height: 29px;
         }
+    }
+}
+.services-banner {
+    background: #FF670B;
+    padding-top: 14px;
+
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+        width: 205px;
+        text-align: center;
+    }
+    .scroll-container {
+        min-width: 1540px;
     }
 }
 
@@ -814,6 +842,11 @@ nav {
             font-size: 2vw;
             line-height: 2.5vw;
         }
+    }
+}
+@media screen and (min-width: 993px) {
+    .social-media-section .instagram-pull {
+        display: block;
     }
 }
 @media screen and (min-width: 1430px) {
@@ -986,21 +1019,6 @@ nav {
         .images {
             padding-bottom: 50%;
         }
-    }
-}
-.services-banner {
-    background: #FF670B;
-    height: 87px;
-    padding-top: 14px;
-
-    h4 {
-        font-size: 22px;
-        line-height: 30px;
-        width: 205px;
-        text-align: center;
-    }
-    .scroll-container {
-        min-width: 1540px;
     }
 }
 
