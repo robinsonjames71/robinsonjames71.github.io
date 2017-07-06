@@ -220,6 +220,7 @@ nav {
   .subnav .services-dropdown {
     position: absolute;
     top: 40px;
+    left: 0;
     width: 100%;
     background-color: #1a1a1a;
     overflow: hidden;
@@ -763,6 +764,7 @@ nav {
     left: 50%;
     transform: translateX(-50%); }
   .servicing-vehicle .images {
+    display: table;
     position: relative;
     padding-bottom: 83.3333%; }
     .servicing-vehicle .images div {

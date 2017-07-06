@@ -163,7 +163,7 @@
     <div class="w3-row services-banner">
         <div class="w3-col s4">
             <div class="content">
-                <a href="/services#repairs">
+                <a href="/services/#repairs">
                     <img src="/images/services-banner/vehicle-repair.svg" width="49" height="51" alt="">
                     <p>Vehicle Repair</p>
                 </a>
@@ -171,7 +171,7 @@
         </div>
         <div class="w3-col s4">
             <div class="content">
-                <a href="/services#servicing">
+                <a href="/services/#servicing">
                     <img src="/images/services-banner/vehicle-servicing.svg" width="50" height="50" alt="">
                     <p>Vehicle Servicing</p>
                 </a>
