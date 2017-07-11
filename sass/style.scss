@@ -121,7 +121,7 @@ nav {
 }
 .mobile-menu {
     position: absolute;
-    top: 110px;
+    top: 105px;
     width: 100vw;
     background-color: #1a1a1a;
     z-index: 200;
@@ -441,6 +441,14 @@ nav {
     .contact-us img {
         width: 30px;
     }
+    .contact-us p:last-child {
+        display: none;
+    }
+    @media screen and (min-width: 500px) {
+        .contact-us p:last-child {
+            display: block;
+        }
+    }
 }
 @media screen and (min-width: 850px) {
     .contact-banner {
@@ -475,6 +483,7 @@ nav {
         display: block;
         position: absolute;
         top: 0;
+        left: 50%;
         transform: translateX(-50%);
         height: 100%;
         width: 100%;
@@ -551,6 +560,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 135px;
+    overflow: hidden;
 
     width: 100vw;
 
@@ -666,6 +676,7 @@ nav {
     height: 67px;
     padding-top: 5px;
     padding-bottom: 10px;
+    overflow: hidden;
 
     .content {
         text-align: center;
@@ -1160,9 +1171,26 @@ nav {
     }
     img {
         display: inline-block;
+        width: 40px;
+        @media screen and (min-width: 601px) {
+            width: 59px;
+        }
     }
 }
 .gallery-section {
     width: 90%;
     margin: 30px auto;
+    &.desktop {
+        display: none;
+    }
+
+
+    @media screen and (min-width: 601px) {
+        &.desktop {
+            display: block;
+        }
+        &.mobile {
+            display: none;
+        }
+    }
 }

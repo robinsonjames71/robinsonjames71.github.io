@@ -43,10 +43,12 @@
         </div>
     </div>
 
-    <div class="w3-row gallery-section">
+    <div class="w3-row gallery-section desktop">
         <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/bf0bdc3c05b75846b2f75e68f1c63ab9.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+    </div>
 
-
+    <div class="w3-row gallery-section mobile">
+        <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/bbd63a27279b57f0b155eebbe8ec8b92.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
     </div>
 
     {% include "partials/footer.html" %}

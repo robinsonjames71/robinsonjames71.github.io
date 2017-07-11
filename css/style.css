@@ -105,7 +105,7 @@ nav {
 
 .mobile-menu {
   position: absolute;
-  top: 110px;
+  top: 105px;
   width: 100vw;
   background-color: #1a1a1a;
   z-index: 200;
@@ -368,6 +368,11 @@ nav {
     width: 44px; }
   .contact-banner .contact-us img {
     width: 30px; }
+  .contact-banner .contact-us p:last-child {
+    display: none; }
+  @media screen and (min-width: 500px) {
+    .contact-banner .contact-us p:last-child {
+      display: block; } }
 
 @media screen and (min-width: 850px) {
   .contact-banner {
@@ -395,6 +400,7 @@ nav {
     display: block;
     position: absolute;
     top: 0;
+    left: 50%;
     transform: translateX(-50%);
     height: 100%;
     width: 100%;
@@ -458,6 +464,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   height: 135px;
+  overflow: hidden;
   width: 100vw; }
   .brands-banner a {
     cursor: pointer; }
@@ -543,7 +550,8 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
   height: 67px;
   padding-top: 5px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  overflow: hidden; }
   .services-banner .content {
     text-align: center; }
   .services-banner p {
@@ -931,8 +939,19 @@ nav {
   .gallery-banner .content {
     text-align: center; }
   .gallery-banner img {
-    display: inline-block; }
+    display: inline-block;
+    width: 40px; }
+    @media screen and (min-width: 601px) {
+      .gallery-banner img {
+        width: 59px; } }
 
 .gallery-section {
   width: 90%;
   margin: 30px auto; }
+  .gallery-section.desktop {
+    display: none; }
+  @media screen and (min-width: 601px) {
+    .gallery-section.desktop {
+      display: block; }
+    .gallery-section.mobile {
+      display: none; } }

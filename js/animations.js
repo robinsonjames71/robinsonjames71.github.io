@@ -14,7 +14,6 @@ $(function() {
                         animationName = classNames[i].split('-').pop();
                     };
                 }
-                console.log(animationName);
 
                 for(i = 0; i < classNames.length; i++) {
                     if(classNames[i].indexOf('animation-m') == 0 && $(window).innerWidth() > 600) {
@@ -81,14 +80,17 @@ $(function() {
         addWaypoints();
     });
 
-    animateBanner();
     function animateBanner(element) {
+        console.log('hello world');
         var animateAmount = (($(element).width() - $(window).innerWidth()) / $(element).width()) * 100;
         if($(window).innerWidth() < $(element).width()) {
           $(element)
               .css({'margin-left': animateAmount + 'vw'})
-              .animate({'margin-left': '-' + animateAmount + 'vw'}, 20000)
-              .animate({'margin-left': animateAmount + '-100vw'}, 20000, animateBanner);
+              .animate({'margin-left': '-' + animateAmount + 'vw'}, 10000, function(){
+                  $(this).animate({'margin-left': animateAmount + 'vw'}, 10000, function(){
+                      animateBanner(element)
+                  });
+              })
         }
     }
 
