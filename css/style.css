@@ -551,7 +551,6 @@ nav {
   background: linear-gradient(to bottom, #ff690b 0%, #ff690b 55%, black 55.1%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
   position: relative;
-  overflow: hidden;
   height: 67px;
   padding-top: 5px;
   padding-bottom: 10px; }
@@ -566,6 +565,7 @@ nav {
   .services-banner a:visited,
   .services-banner a:hover,
   .services-banner a:active {
+    display: inline-block;
     color: #FFF;
     text-decoration: none; }
   .services-banner img {
@@ -573,7 +573,8 @@ nav {
     margin-bottom: 5px;
     width: 40px; }
   .services-banner.servicing {
-    height: 90px; }
+    height: 90px;
+    overflow: hidden; }
 
 @media screen and (min-width: 850px) {
   .services-banner {
@@ -725,7 +726,8 @@ nav {
   display: flex;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -ms-flex-align: center;
@@ -893,11 +895,10 @@ nav {
   margin: 30px auto 40px; }
   .booking-form .w3-col {
     float: none;
+    position: relative;
     margin: 0 auto; }
   .booking-form .w3-col * {
     width: 100%; }
-  .booking-form .w3-col .message {
-    height: 85%; }
   .booking-form p {
     margin-top: 20px;
     margin-bottom: 10px; }
@@ -905,7 +906,7 @@ nav {
     height: 54px;
     padding: 0 10px; }
   .booking-form textarea {
-    height: 200px;
+    height: 270px;
     padding: 10px; }
 
 .submit-form {
@@ -932,12 +933,8 @@ nav {
   .booking-form {
     display: -ms-flexbox;
     display: flex; }
-    .booking-form .w3-col {
-      float: left; }
     .booking-form .w3-col:first-child {
       padding-right: 20px; }
-    .booking-form textarea {
-      height: calc(100% - 4px); }
   .submit-form button {
     right: 0; } }
 

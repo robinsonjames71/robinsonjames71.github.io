@@ -676,7 +676,6 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
 
     position: relative;
-    overflow: hidden;
     height: 67px;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -694,6 +693,7 @@ nav {
     a:visited,
     a:hover,
     a:active {
+        display: inline-block;
         color: #FFF;
         text-decoration: none;
     }
@@ -704,6 +704,7 @@ nav {
     }
     &.servicing {
         height: 90px;
+        overflow: hidden;
     }
 }
 @media screen and (min-width: 850px) {
@@ -883,7 +884,8 @@ nav {
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     justify-content: space-around;
     align-items: center;
     min-width: 1200px;
@@ -1103,13 +1105,11 @@ nav {
 
     .w3-col {
         float: none;
+        position: relative;
         margin: 0 auto;
     }
     .w3-col * {
         width: 100%;
-    }
-    .w3-col .message {
-        height: 85%;
     }
     p {
         margin-top: 20px;
@@ -1120,7 +1120,8 @@ nav {
         padding: 0 10px;
     }
     textarea {
-        height: 200px;
+        // height: calc(100% - 54px);
+        height: 270px;
         padding: 10px;
     }
 }
@@ -1153,14 +1154,8 @@ nav {
     .booking-form {
         display: flex;
 
-        .w3-col {
-            float: left;
-        }
         .w3-col:first-child {
             padding-right: 20px;
-        }
-        textarea {
-            height: calc(100% - 4px);
         }
     }
     .submit-form {

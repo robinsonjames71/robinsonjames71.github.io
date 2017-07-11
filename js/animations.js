@@ -81,7 +81,6 @@ $(function() {
     });
 
     function animateBanner(element) {
-        console.log('hello world');
         var animateAmount = (($(element).width() - $(window).innerWidth()) / $(element).width()) * 100;
         if($(window).innerWidth() < $(element).width()) {
           $(element)
