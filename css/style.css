@@ -463,15 +463,17 @@ nav {
   justify-content: space-around;
   -ms-flex-align: center;
   align-items: center;
-  height: 135px;
+  position: relative;
   overflow: hidden;
+  height: 135px;
   width: 100vw; }
   .brands-banner a {
     cursor: pointer; }
 
 .social-media-section {
   position: relative;
-  height: 560px; }
+  height: 560px;
+  overflow: hidden; }
   .social-media-section .circle {
     position: absolute;
     top: 50%;
@@ -548,10 +550,11 @@ nav {
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff690b), color-stop(55%, #ff690b), color-stop(55.1%, black), color-stop(100%, black));
   background: linear-gradient(to bottom, #ff690b 0%, #ff690b 55%, black 55.1%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
+  position: relative;
+  overflow: hidden;
   height: 67px;
   padding-top: 5px;
-  padding-bottom: 10px;
-  overflow: hidden; }
+  padding-bottom: 10px; }
   .services-banner .content {
     text-align: center; }
   .services-banner p {
@@ -598,6 +601,7 @@ nav {
 
 .map {
   position: relative;
+  overflow: hidden;
   height: 415px;
   margin-top: 50px; }
   .map #map {
@@ -730,7 +734,8 @@ nav {
   margin: 0 auto; }
 
 .header {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .header .title-container {
     display: block;
     position: relative;
@@ -820,10 +825,14 @@ nav {
       z-index: -2; }
     .servicing-vehicle .images:last-child {
       margin-top: 30px; }
+  .servicing-vehicle h3 {
+    margin-top: 20px; }
   .servicing-vehicle p {
     font-size: 16px;
     line-height: 22px;
     padding-top: 10px; }
+  .servicing-vehicle h3 + p {
+    padding-top: 5px; }
 
 @media screen and (min-width: 993px) {
   .servicing-vehicle {

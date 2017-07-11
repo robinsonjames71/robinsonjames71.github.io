@@ -559,9 +559,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 135px;
-    overflow: hidden;
 
+    position: relative;
+    overflow: hidden;
+    height: 135px;
     width: 100vw;
 
     a {
@@ -572,6 +573,7 @@ nav {
 .social-media-section {
     position: relative;
     height: 560px;
+    overflow: hidden;
 
     .circle {
         position: absolute;
@@ -673,10 +675,11 @@ nav {
     background: linear-gradient(to bottom, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
 
+    position: relative;
+    overflow: hidden;
     height: 67px;
     padding-top: 5px;
     padding-bottom: 10px;
-    overflow: hidden;
 
     .content {
         text-align: center;
@@ -737,6 +740,7 @@ nav {
 
 .map {
     position: relative;
+    overflow: hidden;
     height: 415px;
     margin-top: 50px;
 
@@ -889,6 +893,7 @@ nav {
 // Subpages
 .header {
     position: relative;
+    overflow: hidden;
 
     .title-container {
         display: block;
@@ -1010,10 +1015,16 @@ nav {
         }
     }
 
+    h3 {
+        margin-top: 20px;
+    }
     p {
         font-size: 16px;
         line-height: 22px;
         padding-top: 10px;
+    }
+    h3 + p {
+        padding-top: 5px;
     }
 }
 @media screen and (min-width: 993px) {
