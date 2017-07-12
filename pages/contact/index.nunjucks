@@ -20,7 +20,7 @@
     </div>
 
     <div class="w3-row contact-banner">
-        <div class="w3-col s4">
+        <div class="w3-col s4 phone">
             <div class="content contact-us">
                 <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
                 <p><strong>Contact Us</strong></p>
@@ -28,15 +28,15 @@
                 <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
             </div>
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col s6 m4">
             <div class="content address">
                 <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
                 <p><strong>Address</strong></p>
-                <p>353 Albert St, Brunswick,</p>
-                <p>Victoria, 3056</p>
+                <p>130 Henty Street,</p>
+                <p>Reservoir, 3073</p>
             </div>
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col s6 m4">
             <div class="content hours">
                 <img src="/images/contact-banner/mechanic-hours.svg" width="49" height="49" alt="">
                 <p><strong>Business Hours</strong></p>

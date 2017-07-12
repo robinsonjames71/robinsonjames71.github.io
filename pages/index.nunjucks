@@ -45,7 +45,7 @@
     </div>
 
     <div class="w3-row contact-banner">
-        <div class="w3-col s4">
+        <div class="w3-col s4 phone">
             <div class="content contact-us">
                 <a href="/contact/">
                     <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
@@ -55,17 +55,17 @@
                 </a>
             </div>
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col s6 m4">
             <div class="content address">
                 <a href="/contact/">
                     <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
                     <p><strong>Address</strong></p>
-                    <p>353 Albert St, Brunswick,</p>
-                    <p>Victoria, 3056</p>
+                    <p>130 Henty Street,</p>
+                    <p>Reservoir, 3073</p>
                 </a>
             </div>
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col s6 m4">
             <div class="content hours">
                 <a href="/contact/">
                     <img src="/images/contact-banner/mechanic-hours.svg" width="49" height="49" alt="">
