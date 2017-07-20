@@ -1,0 +1,77 @@
+// Carousel Section
+.carousel {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+
+    .carousel-slides {
+        position: absolute;
+
+        &:first-child {
+            position: relative;
+        }
+    }
+
+    .video {
+        width: 100vw;
+        height: 100%;
+    }
+    .play-btn {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10%;
+        max-width: 109px;
+        cursor: pointer;
+    }
+    .preview {
+        display: block !important;
+        width: 100vw;
+    }
+    .embedded-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        // display: none;
+    }
+    .arrow {
+        max-width: 200px;
+        width: 20%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+    > img {
+        margin-bottom: 0;
+    }
+}
+
+.w3-display-bottommiddle {
+    margin-bottom: 0 !important;
+    z-index: 5;
+}
+.arrow {
+    margin-top: 5px;
+}
+@media screen and (min-width: 850px) {
+    .w3-display-bottommiddle {
+        margin-bottom: 16px !important;
+    }
+    .arrow {
+        margin-top: 0;
+    }
+}
+
+.carousel-button {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}

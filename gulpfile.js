@@ -23,7 +23,7 @@ gulp.task('serve', ['sass', 'nunjucks'], function() {
         server: "./"
     });
 
-    gulp.watch("./sass/*.scss", ['sass']);
+    gulp.watch(["./sass/*.scss","./sass/**/*.scss"], ['sass']);
     gulp.watch(["./templates/**/*.+(html|nunjucks)","./pages/**/*.+(html|nunjucks)"], ['nunjucks']);
 });
 

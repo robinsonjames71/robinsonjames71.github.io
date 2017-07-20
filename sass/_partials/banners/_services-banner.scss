@@ -1,0 +1,75 @@
+
+.services-banner {
+    background: rgba(0,0,0,1);
+    background: rgba(255,105,11,1);
+    background: -moz-linear-gradient(top, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,105,11,1)), color-stop(55%, rgba(255,105,11,1)), color-stop(55.1%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,105,11,1) 0%, rgba(255,105,11,1) 55%, rgba(0,0,0,1) 55.1%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff690b', endColorstr='#000000', GradientType=0 );
+
+    position: relative;
+    height: 67px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    .content {
+        text-align: center;
+    }
+    p {
+        color: #FFF;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        display: inline-block;
+        color: #FFF;
+        text-decoration: none;
+    }
+    img {
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 40px;
+    }
+    &.servicing {
+        height: 90px;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 850px) {
+    .services-banner {
+        height: 77px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 60px;
+
+        img {
+            width: auto;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+.services-banner {
+    background: #FF670B;
+    padding-top: 14px;
+
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+        width: 205px;
+        text-align: center;
+    }
+    .scroll-container {
+        min-width: 1540px;
+    }
+}

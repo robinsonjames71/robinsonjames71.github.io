@@ -1,0 +1,78 @@
+
+.page-footer {
+    height: 77px;
+    margin-top: 40px;
+    background-color: #fff;
+
+    p {
+        float: left;
+        font-size: 1vw;
+        line-height: 1.3vw;
+        color: #000;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .links {
+        display: none;
+        height: 100%;
+    }
+
+    .links .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-left: 40px;
+    }
+    .copyright {
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding-right: 30px;
+    }
+    .copyright p {
+        float: right;
+        text-align: right;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .page-footer {
+        .links {
+            display: block;
+        }
+        .copyright {
+            float: none;
+        }
+        .copyright p {
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+    }
+}
+@media screen and (min-width: 993px) {
+    .social-media-section .instagram-pull {
+        display: block;
+    }
+}
+@media screen and (min-width: 1430px) {
+    .page-footer p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-footer .copyright p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

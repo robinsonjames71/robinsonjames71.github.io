@@ -1,0 +1,321 @@
+
+// Navigation Section
+.nav-placeholder {
+    height: 101px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    display: block;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: rgb(26,26,26);
+    z-index: 10;
+
+    .nav-wrapper {
+        width: 100%;
+        .contact span {
+            display: none;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    nav .nav-wrapper .contact span {
+        display: inline;
+    }
+}
+@media screen and (min-width: 700px) {
+    .nav-placeholder {
+        height: 101px;
+    }
+    nav p {
+        font-size: 1.7vw;
+        line-height: 2.1vw;
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width: 1150px) {
+    nav p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.nav-menu-state {
+    display: none;
+    position: absolute;
+}
+.mobile-nav {
+    position: absolute;
+    height: 100%;
+}
+.nav-burger {
+    display: block;
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    transform: translateY(-20%);
+    width: 59px;
+    height: 56px;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        left: 20px;
+        width: 19px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #fff;
+    }
+    .nav-burger-top {
+        top: 20px;
+        transition: transform .2s linear, top .2s linear .2s;
+    }
+    .nav-burger-middle {
+        top: 27px;
+        transition: opacity .2s linear .2s;
+    }
+    .nav-burger-bottom {
+        top: 34px;
+        transition: transform .2s linear, top .2s linear .2s;
+    }
+}
+.nav-menu-state:checked ~ .nav-burger {
+    .nav-burger-top {
+        top: 27px;
+        transition: top .2s linear, transform .2s linear .2s;
+        transform: rotate(45deg);
+    }
+    .nav-burger-middle {
+        transition: opacity .2s linear;
+        opacity: 0;
+    }
+    .nav-burger-bottom {
+        top: 27px;
+        transition: top .2s linear, transform .2s linear .2s;
+        transform: rotate(-45deg);
+    }
+}
+.nav-menu-state:checked ~ .mobile-menu {
+    max-height: 500px;
+}
+.mobile-menu {
+    position: absolute;
+    top: 105px;
+    width: 100vw;
+    background-color: #1a1a1a;
+    z-index: 200;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+    .mobile-link {
+        display: block;
+        width: calc(100% - 40px);
+        height: 50px;
+        line-height: 50px;
+        margin-left: 20px;
+        text-decoration: none;
+        border-bottom: 1px solid #FFF;
+    }
+    .sub-link {
+        display: block;
+        width: calc(100% - 40px);
+        height: 25px;
+        line-height: 50px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    .mobile-link:first-child {
+        border-top: 1px solid #FFF;
+        border-bottom: 0;
+        height: 30px;
+    }
+    .mobile-social-media {
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        vertical-align: middle;
+        border-bottom: 0;
+        padding-top: 8px;
+        border-bottom: 1px solid #FFF;
+
+        a {
+            margin-right: 20%;
+        }
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.worx-logo {
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 420px;
+    padding: 8px 0;
+
+    img {
+        max-width: 302px;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    p {
+        font-size: 15px;
+        line-height: 16px;
+        margin-top: 7px;
+        text-align: center;
+    }
+}
+.book-now {
+    display: none;
+}
+.book-now img {
+    width: 147px;
+    height: 101px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF670B;
+    float: left;
+    width: 100%;
+    height: 39px;
+    padding-left: 13px;
+    padding-right: 13px;
+
+    p {
+        color: #FFF;
+        font-weight: 300;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+.subnav {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 62px;
+    float: left;
+
+    .subnav-link {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-right: 1px solid #F4F4F4;
+        color: #FFF;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            height: 25px;
+            line-height: 25px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff690b;
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+    .services:hover .services-dropdown {
+        max-height: 225px;
+    }
+    .services-dropdown {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+    }
+    .services-dropdown:hover {
+        max-height: 195px;
+    }
+}
+@media screen and (min-width: 550px) {
+    .worx-logo {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    nav {
+        display: flex;
+    }
+    nav .nav-wrapper {
+        width: calc(70% - 140px);
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .worx-logo {
+        float: none;
+        order: -1;
+    }
+    .contact {
+        justify-content: flex-end;
+    }
+    .subnav {
+        display: flex;
+    }
+    .book-now {
+        display: block;
+        transition: all 0.2s;
+    }
+    .book-now:hover {
+        opacity: 0.8;
+    }
+}
+@media screen and (min-width: 1420px) {
+    nav .nav-wrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,119 @@
+
+// Contact page
+.contact-header .title {
+    right: 0;
+}
+.contact-page-section {
+    position: relative;
+    width: 90%;
+    margin: 30px auto 40px;
+
+    .w3-col {
+        min-height: 1px;
+    }
+    > div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map {
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 601px) {
+    .contact-page-section {
+        display: flex;
+
+        align-items: center;
+        > div {
+            position: relative;
+            left: 0;
+            transform: none;
+        }
+    }
+}
+.booking-title {
+    background: #FF670B;
+    height: 87px;
+
+    .booking-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2 {
+        line-height: 87px;
+        text-transform: uppercase;
+    }
+}
+.booking-form {
+    width: 90%;
+    margin: 30px auto 40px;
+
+    .w3-col {
+        float: none;
+        position: relative;
+        margin: 0 auto;
+    }
+    .w3-col * {
+        width: 100%;
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    input {
+        height: 54px;
+        padding: 0 10px;
+    }
+    textarea {
+        // height: calc(100% - 54px);
+        height: 270px;
+        padding: 10px;
+    }
+}
+.submit-form {
+    width: 90%;
+    margin: 0 auto;
+
+    input[type="submit"] {
+        position: relative;
+        float: right;
+        outline: 0;
+        border: 0;
+        border-radius: 3px;
+        width: 176px;
+        height: 55px;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 27px;
+        background-color: #FF670B;
+
+        &:hover {
+            background-color: #F35B00;
+        }
+        &:active {
+            top: 2px;
+        }
+    }
+}
+@media screen and (min-width: 601px) {
+    .booking-form {
+        display: flex;
+
+        .w3-col:first-child {
+            padding-right: 20px;
+        }
+    }
+    .submit-form {
+        button {
+            right: 0;
+        }
+    }
+}

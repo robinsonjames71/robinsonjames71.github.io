@@ -44,38 +44,7 @@
         </div>
     </div>
 
-    <div class="w3-row contact-banner">
-        <div class="w3-col s4 phone">
-            <div class="content contact-us">
-                <a href="/contact/">
-                    <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
-                    <p><strong>Contact Us</strong></p>
-                    <p>03 9387 4440</p>
-                    <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col s6 m4">
-            <div class="content address">
-                <a href="/contact/">
-                    <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
-                    <p><strong>Address</strong></p>
-                    <p>130 Henty Street,</p>
-                    <p>Reservoir, 3073</p>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col s6 m4">
-            <div class="content hours">
-                <a href="/contact/">
-                    <img src="/images/contact-banner/mechanic-hours.svg" width="49" height="49" alt="">
-                    <p><strong>Business Hours</strong></p>
-                    <p>Monday to Friday</p>
-                    <p>8:00am - 5:00pm</p>
-                </a>
-            </div>
-        </div>
-    </div>
+    {% include "partials/contact-banner.html" %}
 
     <div class="w3-row about-section">
         <img srcset="/images/about-section/european-car-service-shop-desktop.jpg 1680w,
@@ -89,6 +58,7 @@
                 <div class="title">
                     <p>Welcome To</p>
                     <h3>Worx Automotive</h3>
+                    <p>Independent European Specialist</p>
                 </div>
                 <img srcset="/images/about-section/service-shop-mechanic.jpg 360w,
                      /images/about-section/service-shop-mechanic@2x.jpg 720w"
@@ -98,29 +68,7 @@
         </div>
     </div>
 
-    <div class="w3-row brands-banner">
-        <div class="scroll-container">
-            <a href="/services/audi">
-                <img src="/images/brands-banner/audi-service.svg" width="165" height="102" alt="">
-            </a>
-            <a href="/services/bmw">
-                <img src="/images/brands-banner/bmw-service.svg" width="101" height="101" alt="">
-            </a>
-            <a href="/services/volkswagon">
-                <img src="/images/brands-banner/volkswagen-service.svg" width="100" height="99" alt=""
-            >
-            </a>
-            <a href="/services/ferrari">
-                <img src="/images/brands-banner/ferrari-service.svg" width="231" height="50" alt="">
-            </a>
-            <a href="/services/mercedes-benz">
-                <img src="/images/brands-banner/mercedes-service.svg" width="127" height="102" alt="">
-            </a>
-            <a href="/services/mini-cooper">
-                <img src="/images/brands-banner/mini-service.svg" width="196" height="86" alt="">
-            </a>
-        </div>
-    </div>
+    {% include "partials/brands-banner.html" %}
 
     <div class="w3-row social-media-section">
         <div class="circle">
@@ -141,22 +89,25 @@
             <div class="fb-page" data-href="https://www.facebook.com/WorxAutomotive/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WorxAutomotive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WorxAutomotive/">Worx Automotive</a></blockquote></div>
         </div>
         <div class="w3-col s12 l6">
-            <div class="content animation-m anim-name-moveright anim-trigger-top-in-view anim-dur-2000 anim-del-0">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fguy.ingram%2Fposts%2F10154497237708199%3A0&width=500" width="500" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <!-- <div class="content animation-m anim-name-moveright anim-trigger-top-in-view anim-dur-2000 anim-del-0">
                 <img srcset="/images/social-media/european-car-mechanic-mini.jpg 840w,
                              /images/social-media/european-car-mechanic-mini@0.jpg 420w,
                              /images/social-media/european-car-mechanic-mini@1.jpg 1260w,
                              /images/social-media/european-car-mechanic-mini@2x.jpg 1680w"
                         src="/images/social-media/european-car-mechanic-mini.jpg">
-            </div>
+            </div> -->
         </div>
         <div class="w3-col l6 instagram-pull">
-            <div class="content animation-m anim-name-moveleft anim-trigger-top-in-view anim-dur-2000 anim-del-0">
+            <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BWpATJ8lrW5/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Worx Automotive (@worxauto)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-07-17T08:18:24+00:00">Jul 17, 2017 at 1:18am PDT</time></p></div></blockquote>
+            <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+            <!-- <div class="content animation-m anim-name-moveleft anim-trigger-top-in-view anim-dur-2000 anim-del-0">
                 <img srcset="/images/social-media/european-car-mechanic-bmw.jpg 840w,
                              /images/social-media/european-car-mechanic-bmw@0.jpg 420w,
                              /images/social-media/european-car-mechanic-bmw@1.jpg 1260w,
                              /images/social-media/european-car-mechanic-bmw@2x.jpg 1680w"
                         src="/images/social-media/european-car-mechanic-bmw.jpg">
-            </div>
+            </div> -->
         </div>
     </div>
 
