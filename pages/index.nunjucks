@@ -46,99 +46,117 @@
 
     {% include "partials/contact-banner.html" %}
 
-    <div class="w3-row about-section">
-        <img srcset="/images/about-section/european-car-service-shop-desktop.jpg 1680w,
-                     /images/about-section/european-car-service-shop-desktop@0.jpg 840w,
-                     /images/about-section/european-car-service-shop-desktop@1.jpg 2520w,
-                     /images/about-section/european-car-service-shop-desktop@2x.jpg 3360w"
-                src="/images/about-section/european-car-service-shop-desktop.jpg"
-                class="animation-m anim-name-zoomin anim-trigger-top-in-view anim-dur-2000 anim-del-0" >
-        <div class="w3-col w3-right s6 animation-m anim-name-moveup anim-trigger-top-in-view anim-dur-2000 anim-del-0">
+    <div class="w3-row title-section">
+        <div class="title">
+            <p>Welcome To</p>
+            <h3>Worx Automotive</h3>
+            <p>Independent European Specialist</p>
+        </div>
+    </div>
+
+    <div class="w3-row home-section">
+        <div class="section-image">
+            <img    sizes="(max-width: 768px) 100vw, 1112px"
+                    srcset="/images/home/home-shop-xl.jpg 2224w,
+                            /images/home/home-shop-lg.jpg 1600w,
+                            /images/home/home-shop-md.jpg 1112w"
+                    src="/images/home/home-shop-md.jpg"
+                    alt="Worx Automotive Independent European Specialist">
+        </div>
+        <div class="w3-col">
             <div class="content">
-                <div class="title">
-                    <p>Welcome To</p>
-                    <h3>Worx Automotive</h3>
-                    <p>Independent European Specialist</p>
+                <p class="section-head">Welcome</p>
+                <p>Here at Worx Automotive we’ve been servicing and maintaining European vehicles since 1987. Our technicians are factory trained and have specialised in working on European cars. Our aim is to ensure every time you visit our 900sqm state-of-the art workshop, it’s the most enjoyable, personable service experience you’ve had.</p>
+                <p>We understand that every client is different and every car is different. That’s why we offer tailor made maintenance schedules to suit your requirements.</p>
+                <p>Have peace of mind, that when you walk into Worx, the person you speak to over the counter, is also the person that’s working on your vehicle. We believe in including you in all aspects of your vehicles service, and our personal touch will ensure you never feel left in the dark.</p>
+                <div class="link">
+                    <a href="/contact/#booking">Book your car in now!</a>
                 </div>
-                <img srcset="/images/about-section/service-shop-mechanic.jpg 360w,
-                     /images/about-section/service-shop-mechanic@2x.jpg 720w"
-                     src="/images/about-section/service-shop-mechanic.jpg" alt="">
-                <p>We take pride in our in-depth knowledge of the industry and focus on going above and beyond the expectations of our clients. Our quality European car repairs and services in Melbourne are matched by the professional advice we give to help you maintain your vehicle and reduce long term costs.</p>
             </div>
         </div>
     </div>
 
-    {% include "partials/brands-banner.html" %}
+    <div class="w3-row home-section">
+        <div class="w3-col">
+            <div class="content">
+                <p class="section-head">So, how do we compare to the rest?</p>
+                <p>Worx Automotive has built a reputation on providing its clients with nothing but the highest quality parts and accessories. Rest assured that when you bring your new vehicle to Worx, we guarantee it will maintain its new car warranty, because we only install genuine or OEM parts on your vehicle. This means that not only will your car leave with a warranty on the work completed, but also a warranty from the manufacturer on every part that was installed.</p>
+                <p>We’ve partnered with Liqui Moly, bringing you over 50 years of experience in lubricants and fuel &amp; oil additives developed with Europe’s leading car manufactures. Liqui Moly formulations are ideal for prestige, performance, muscle and classic cars as well as 4WD’s and competition engines.</p>
+                <p>We enable our clients’ access to exclusive dealer support systems and provide the latest technology in diagnostic systems. We use all the same tools that you would find in a factory dealership.</p>
+                <div class="link">
+                    <a href="/services">See our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-image">
+            <img    sizes="(max-width: 768px) 100vw, 1112px"
+                    srcset="/images/home/home-servicing-xl.jpg 2224w,
+                            /images/home/home-servicing-lg.jpg 1600w,
+                            /images/home/home-servicing-md.jpg 1112w"
+                    src="/images/home/home-servicing-md.jpg"
+                    alt="Worx Automotive Independent European Specialist">
+        </div>
+    </div>
 
-    <div class="w3-row social-media-section">
-        <div class="circle">
-            <div class="semicircle left-semicircle">
-                <div class="facebook">
-                    <img src="/images/icons/facebook.svg" width="39" height="35" alt="">
-                    <p>Facebook Page</p>
-                </div>
-            </div>
-            <div class="semicircle right-semicircle">
-                <a href="/gallery/">
-                <div class="instagram">
-                    <img src="/images/icons/instagram.svg" width="39" height="35" alt="">
-                    <p>Instagram Gallery</p>
-                </div>
-                </a>
-            </div>
-            <div class="fb-page" data-href="https://www.facebook.com/WorxAutomotive/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WorxAutomotive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WorxAutomotive/">Worx Automotive</a></blockquote></div>
+    <div class="w3-row home-section">
+        <div class="section-image">
+            <img    sizes="(max-width: 768px) 100vw, 1112px"
+                    srcset="/images/home/home-mechanic-xl.jpg 2224w,
+                            /images/home/home-mechanic-lg.jpg 1600w,
+                            /images/home/home-mechanic-md.jpg 1112w"
+                    src="/images/home/home-mechanic-md.jpg"
+                    alt="Worx Automotive Independent European Specialist">
         </div>
-        <div class="w3-col s12 l6">
+        <div class="w3-col">
+            <div class="content">
+                <p class="section-head">We’ve got a suite of Services available to all new and existing clients, including;</p>
+                <ul>
+                    <li>Premium Log Book Servicing</li>
+                    <li>Full Diagnostics</li>
+                    <li>Complete Electrical</li>
+                    <li>Air-Conditioning</li>
+                    <li>Genuine and OEM Brakes</li>
+                    <li>Suspension Repairs and Upgrades/ Coilover</li>
+                    <li>Upgrades for Track Use</li>
+                    <li>Braking System Upgrades</li>
+                    <li>Race Engine Rebuilds and Maintenance</li>
+                    <li>Engine and Transmission Rebuilds</li>
+                    <ul>
+                        <li>Digital Performance ECU Mapping (ECU Modifications, Power Upgrades)</li>
+                        <li>RWC Road Worthy Certificate</li>
+                        <li>Custom Modification</li>
+                        <li>Exhaust Repairs/ Modification “upgrades”</li>
+                        <li>Supercharge and Turbo upgrades</li>
+                        <li>Transmission Repairs and Upgrades</li>
+                        <li>Pre Purchase Vehicle Inspection</li>
+                        <li>Race Car Prep/ Maintenance and Upgrades</li>
+                        <li>Speciality Brakes for Super Cars and Race Cars</li>
+                    </ul>
+                </ul>
+                <div class="link">
+                    <a href="/contact">Learn More about Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row home-section social-media">
+        <div class="">
             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fguy.ingram%2Fposts%2F10154497237708199%3A0&width=500" width="500" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            <!-- <div class="content animation-m anim-name-moveright anim-trigger-top-in-view anim-dur-2000 anim-del-0">
-                <img srcset="/images/social-media/european-car-mechanic-mini.jpg 840w,
-                             /images/social-media/european-car-mechanic-mini@0.jpg 420w,
-                             /images/social-media/european-car-mechanic-mini@1.jpg 1260w,
-                             /images/social-media/european-car-mechanic-mini@2x.jpg 1680w"
-                        src="/images/social-media/european-car-mechanic-mini.jpg">
-            </div> -->
+            <div class="link">
+                <a href="https://www.facebook.com/WorxAutomotive">Learn More about Us</a>
+            </div>
         </div>
-        <div class="w3-col l6 instagram-pull">
+        <div class="instagram-pull">
             <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BWpATJ8lrW5/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Worx Automotive (@worxauto)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-07-17T08:18:24+00:00">Jul 17, 2017 at 1:18am PDT</time></p></div></blockquote>
             <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-            <!-- <div class="content animation-m anim-name-moveleft anim-trigger-top-in-view anim-dur-2000 anim-del-0">
-                <img srcset="/images/social-media/european-car-mechanic-bmw.jpg 840w,
-                             /images/social-media/european-car-mechanic-bmw@0.jpg 420w,
-                             /images/social-media/european-car-mechanic-bmw@1.jpg 1260w,
-                             /images/social-media/european-car-mechanic-bmw@2x.jpg 1680w"
-                        src="/images/social-media/european-car-mechanic-bmw.jpg">
-            </div> -->
-        </div>
-    </div>
-
-    <div class="w3-row services-banner">
-        <div class="w3-col s4">
-            <div class="content">
-                <a href="/services/#repairs">
-                    <img src="/images/services-banner/vehicle-repair.svg" width="49" height="51" alt="">
-                    <p>Vehicle Repair</p>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col s4">
-            <div class="content">
-                <a href="/services/#servicing">
-                    <img src="/images/services-banner/vehicle-servicing.svg" width="50" height="50" alt="">
-                    <p>Vehicle Servicing</p>
-                </a>
-            </div>
-        </div>
-        <div class="w3-col s4">
-            <div class="content">
-                <a href="/services/">
-                    <img src="/images/services-banner/vehicle-mechanic.svg" width="51" height="50" alt="">
-                    <p>Experience</p>
-                </a>
+            <div class="link">
+                <a href="/gallery">Learn More about Us</a>
             </div>
         </div>
     </div>
 
-    <div class="w3-row map">
+    <div class="w3-row map home-section">
         <div id="map"></div>
         <div class="w3-col s6"></div>
         <div class="w3-col s4 location">
@@ -152,13 +170,6 @@
 
     {% include "partials/footer.html" %}
 
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=10153537110783429";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuEKvCCeFcsqDak-R9JOnqclDN2cxtBU8"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc6uOc7jJ55YSBwF8Chpx6tW_YhdP2R5U"></script>
     <script src="/js/maps.js"></script>
 {% endblock %}
