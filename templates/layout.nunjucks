@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
     <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="/css/animations.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    {% block content %} {% endblock %}
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/js/waypoints.min.js"></script>
     <script src="/js/animations.js"></script>
     <script src="/js/script.js"></script>
-</head>
-
-<body>
-    {% block content %} {% endblock %}
 </body>
 
 </html>

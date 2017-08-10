@@ -91,36 +91,5 @@ function showDivs(n, direction) {
         $('.embedded-video').show().css({'z-index': 1})
             .attr('src', $('.embedded-video').attr('src') + "&autoplay=1")
     })
-    var facebookActivated = false;
-
-    $('.facebook').on('click', function() {
-        if (!facebookActivated) {
-            $('.right-semicircle').animate({
-                width: 0
-            }, 200, function() {});
-            $(this).css({'width': '90%'}).animate({
-                top: '25%',
-                right: '-20px'
-            })
-            $(this).children('p').animate({
-                'left': '25%'
-            }, function() {
-                $('.fb-page').css({'z-index': '-1'}).animate({
-                    opacity: 1
-                })
-                $('.left-semicircle').css({
-                    'width': 0
-                });
-                $('.facebook').css({
-                    'left': 0,
-                    'width': 356,
-                    'text-align': 'center',
-                }).find('p').css({
-                    'left': 0
-                })
-                facebookActivated = true;
-            })
-        }
-    })
 
 })();

@@ -535,37 +535,55 @@ nav {
     text-transform: uppercase;
     border: 2px solid #FFF;
     padding: 5px 12px;
-    width: 362px;
+    width: 292px;
     margin: 0 auto; }
     .title-section .title p {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 29px;
       font-weight: 200; }
     .title-section .title h3 {
       margin-top: -5px;
-      font-size: 33px;
+      font-size: 26px;
       line-height: 40px;
       color: #FFF; }
     .title-section .title p:last-child {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 20px; }
+
+@media screen and (min-width: 450px) {
+  .title-section .title {
+    width: 362px; }
+    .title-section .title p {
+      font-size: 24px; }
+    .title-section .title h3 {
+      font-size: 33px; }
+    .title-section .title p:last-child {
+      font-size: 18px; } }
 
 .home-section {
   position: relative;
-  height: 642px;
   overflow: hidden;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-top: 30px solid #FF670B; }
+  border-top: 30px solid #FF670B;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .title-section + .home-section {
     margin-top: 30px; }
   .home-section .section-image {
-    width: 66.6%;
+    width: 100%;
     overflow: hidden; }
+    .home-section .section-image img {
+      position: relative;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .home-section .section-image:first-child img {
+      padding-top: 0; }
+    .home-section .section-image:last-child img {
+      padding-bottom: 0; }
   .home-section .w3-col {
-    width: 33.3%; }
+    width: 100%; }
   .home-section .content {
     display: -ms-flexbox;
     display: flex;
@@ -574,7 +592,7 @@ nav {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
-    width: 66%;
+    width: 80%;
     margin: 0 auto; }
     .home-section .content img {
       width: 100%;
@@ -601,7 +619,29 @@ nav {
     .home-section a:hover {
       background-color: #d75100; }
 
-.social-media {
+@media screen and (min-width: 800px) {
+  .home-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 642px;
+    padding: 0; }
+    .home-section .section-image {
+      width: 50%;
+      padding: 0; }
+      .home-section .section-image img {
+        width: auto; }
+    .home-section .w3-col {
+      width: 50%; } }
+
+@media screen and (min-width: 960px) {
+  .home-section .section-image {
+    width: 60%; }
+  .home-section .w3-col {
+    width: 40%; } }
+
+.home-section.social-media {
   position: relative;
   overflow: hidden;
   height: auto;
@@ -609,15 +649,34 @@ nav {
   padding-bottom: 10px;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
-  .social-media .w3-col {
+  .home-section.social-media .w3-col {
     position: relative; }
-  .social-media .link {
+  .home-section.social-media .link {
     text-align: center; }
-  .social-media a {
+  .home-section.social-media a {
     display: inline-block; }
-  .social-media .instagram-pull iframe {
-    height: 424px;
-    width: auto; }
+  .home-section.social-media .facebook iframe {
+    display: none;
+    margin-bottom: 7px; }
+  .home-section.social-media .facebook iframe.mobile {
+    display: block; }
+  .home-section.social-media .instagram-pull {
+    padding-top: 20px; }
+    .home-section.social-media .instagram-pull iframe {
+      height: 424px;
+      width: auto; }
+  .home-section.social-media iframe {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+
+@media screen and (min-width: 960px) {
+  .home-section.social-media .facebook iframe {
+    display: block; }
+  .home-section.social-media .facebook iframe.mobile {
+    display: none; }
+  .home-section.social-media .instagram-pull {
+    padding-top: 0; } }
 
 .map {
   position: relative;
@@ -631,7 +690,7 @@ nav {
     height: 100%;
     width: 100%; }
   .map .location {
-    position: relative;
+    position: absolute;
     z-index: 2; }
   .map > img {
     position: absolute;
@@ -677,6 +736,10 @@ nav {
       font-size: 26px;
       line-height: 32px;
       color: #000; }
+
+@media screen and (min-width: 800px) {
+  .map .location {
+    position: relative; } }
 
 .header {
   position: relative;
