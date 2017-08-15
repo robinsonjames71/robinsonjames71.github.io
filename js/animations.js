@@ -85,8 +85,8 @@ $(function() {
         if($(window).innerWidth() < $(element).width()) {
           $(element)
               .css({'margin-left': animateAmount + 'vw'})
-              .animate({'margin-left': '-' + animateAmount + 'vw'}, 10000, function(){
-                  $(this).animate({'margin-left': animateAmount + 'vw'}, 10000, function(){
+              .animate({'margin-left': '-' + animateAmount + 'vw'}, 40000, 'linear', function(){
+                  $(this).animate({'margin-left': animateAmount + 'vw'}, 40000, 'linear', function(){
                       animateBanner(element)
                   });
               })

@@ -75,6 +75,7 @@
         }
     }
     .w3-col {
+        height: 100%;
         width: 100%;
     }
     .content {
@@ -106,7 +107,11 @@
             margin-bottom: 15px;
         }
     }
+    .link {
+        text-align: center;
+    }
     a {
+        display: inline-block;
         width: auto;
         background-color: $base-color;
         border-radius: 2px;
@@ -136,6 +141,9 @@
         }
         .w3-col {
             width: 50%;
+        }
+        .link {
+            text-align: left;
         }
     }
 }
@@ -214,6 +222,7 @@
     #map,
     iframe {
         position: absolute;
+        left: 0;
         height: 100%;
         width: 100%;
     }

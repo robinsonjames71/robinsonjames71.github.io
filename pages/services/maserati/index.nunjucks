@@ -1,0 +1,43 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Maserati Service">
+        <div class="title-container">
+            <div class="w3-col s4 title">
+                <h2>Maserati Service</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/brands-banner.html" %}
+
+    <div class="w3-row servicing-vehicle">
+        <div class="w3-col s0 l1">
+        </div>
+        <div class="w3-col s10">
+            <h2>THE PREMIER MASERATI SERVICE AND REPAIRS SPECIALIST IN MELBOURNE</h2>
+            <p>Ongoing maintenance is a necessity for any make or model, but European cars require a level of knowledge and experience that you’ll only get from a specialist. Worx Automotive is the go-to Maserati mechanic in Melbourne and has built a reputation on automotive services that go above and beyond the needs of the client.</p>
+            <h3>A MASERATI MECHANIC THAT WILL GIVE YOUR CAR THE CARE IT DESERVES</h3>
+            <p>A Maserati is more than just a car, and we understand this more than a generic mechanic ever will. Our team of Maserati specialist technicians are factory trained and know these luxury European sedans inside out, and can provide service and repairs to a standard that you won’t find anywhere else.</p>
+            <p>We have the knowledge, experience and equipment to work with any model—be it a Maserati, or a classical or modern vehicle—and will provide you with expert advice on keeping your car in the best possible condition. While electrical components are always evolving, we take pride in our ability to keep up with the industry and offer quality servicing of these systems.</p>
+            <h3>WE WORK WITH MASERATIS, MINIS, AUDIS AND MORE</h3>
+            <p>From an Audi TT to a Maserati, Melbourne trusts <a href="http://www.worxauto.com.au/">Worx Automotive</a> to ensure long-term performance, safety, efficiency and peace of mind. Whether you need a routine Maserati service or some unexpected repairs, we’ll give you a comprehensive safety inspection and can provide genuine aftermarket parts as required. Choose us and rest easy know your needs are always put first with the preferred Maserati repairs and service provider in Melbourne!</p>
+            <h3>MAKE A BOOKING</h3>
+            <p>Call (03) 9387 4440 or email <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a> to make any enquiries and schedule a service with a Worx Maserati specialist in Melbourne. Be sure to <a href="https://www.facebook.com/WorxAutomotive?fref=ts">check out our Facebook page</a> for news, photos and reviews.</p>
+            <p>We are located at 130 Henty Street, Reservoir.</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Service">
+        <div class="title-container">
+            <div class="w3-col s4 title">
+                <h2>Service</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/brands-banner.html" %}
+
+    <div class="w3-row servicing-vehicle">
+        <div class="w3-row w3-col s10 l6 images">
+            <div class="w3-col s10 behind left">
+                <img srcset="/images/services-page/brands/other-jeep@2x.jpg" src="/images/services-page/brands/other-jeep.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
+            </div>
+            <div class="w3-col s10 over right">
+                <img srcset="/images/services-page/brands/lexus@2x.jpg" src="/images/services-page/brands/lexus.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
+            </div>
+            <div class="w3-col s10 bg-border"></div>
+        </div>
+        <div class="w3-col s0 l1">
+        </div>
+        <div class="w3-col s10 l5">
+            <h2>SPECIALIST MECHANIC IN MELBOURNE’S NORTH</h2>
+            <p>Ongoing maintenance and repair is necessary for any vehicle, but it’s particularly crucial when it comes to cars made by luxury manufacturers. Worx Automotive has been a trusted mechanic for more than 25 years and unrivalled experience with European vehicles; if your needs servicing or repairs, we are the only team you need.</p>
+            <h3>UNCOMPROMISING QUALITY THAT ONLY A SPECIALIST CAN PROVIDE</h3>
+            <p>Our team of factory trained technicians has extensive experience working with vehicles from all manufacturers and understands how to keep yours in the best possible condition. All of our services come with a comprehensive safety check, after which we will advise you if anything requires immediate attention. We will also provide professional advice on future maintenance and indicate any issues that may arise in the future.</p>
+            <p>When it comes to repairs, you can have full peace of mind that we’ll complete the work to the highest possible standard as your mechanic. If any replacements are required, we’ll source quality aftermarket parts to ensure your car runs smoothly, safely and efficiently for as long as possible. No matter what you need, you can rely on us to get the job done to the standard that you deserve.</p>
+            <h3>WHY CHOOSE US AS YOUR MECHANIC FOR SERVICING AND REPAIRS?</h3>
+            <p>Aside from our <a href="http://www.worxauto.com.au/">professional equipment, extensive experience and specialised knowledge</a> of cars, we have a reputation based on client-focused service driven by a passion for cars. We pride ourselves as an specialist that Melbourne motorists can trust for honesty, affordability and the highest possible quality regardless of the circumstances.</p>
+            <h3>CONTACT OUR WORKSHOP</h3>
+            <p>To make an enquiry or book in a service with a mechanic, give us a call on (03) 9387 4440 or send an email to <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a>. You can find us at 130 Henty Street, Reservoir, and be sure to take a look through our reviews and photos on <a href="https://www.facebook.com/WorxAutomotive?fref=ts">Facebook</a>.</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}

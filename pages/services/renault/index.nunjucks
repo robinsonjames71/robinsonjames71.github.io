@@ -1,0 +1,51 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Renault Service">
+        <div class="title-container Renault">
+            <div class="w3-col s4 title">
+                <h2>Renault Service</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/brands-banner.html" %}
+
+    <div class="w3-row servicing-vehicle">
+        <div class="w3-row w3-col s10 l6 images">
+            <div class="w3-col s10 left">
+                <img srcset="/images/services-page/brands/renault@2x.jpg" src="/images/services-page/brands/renault.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
+            </div>
+            <div class="w3-col s10 over right">
+                <img srcset="/images/services-page/brands/renault2@2x.jpg" src="/images/services-page/brands/renault2.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
+            </div>
+            <div class="w3-col s10 bg-border"></div>
+        </div>
+        <div class="w3-col s0 l1">
+        </div>
+        <div class="w3-col s10 l5">
+            <h2>MELBOURNE’S EXPERT RENAULT MECHANIC</h2>
+            <p>When you own a luxury vehicle, you want it maintained by a professional who can guarantee the highest standard of workmanship. With decades of experience working on European cars, Worx Automotive is the only mechanic you need for Renault repairs and servicing in Melbourne.</p>
+            <h3>LET A RENAULT SPECIALIST KEEP YOUR CAR IN TOP CONDITION</h3>
+            <p>A Merc deserves more than a standard service, and Worx Automotive can go above and beyond your expectations. Our team of technicians are factory trained and understand the European motoring industry more than any other, possessing the skills and equipment necessary to work with both modern and classic cars.</p>
+            <p>Every standard service we offer comes with a full safety inspection to ensure any current or potential issues are addressed as soon as possible. If you require repairs, we can supply genuine aftermarket parts and offer quality workmanship to ensure the result meets the high standards we hold ourselves to.</p>
+            <h3>RENAULT REPAIRS AND SERVICING THAT YOU CAN RELY ON</h3>
+            <p>No matter the circumstances, you can rest easy knowing you have chosen a Renault mechanic who is backed by comprehensive insurance and always put your needs first. We are as dedicated to customer service as we are passionate about cars, and have worked hard to build a reputation as a Renault specialist mechanic in Melbourne. Whether you need routine maintenance, body works, repair of electronic components or anything else, you can trust <a href="http://www.worxauto.com.au/">Worx Automotive</a> to get the job done to the highest possible standard at a cost that won’t break the bank.</p>
+            <h3>BOOK A SERVICE OR REPAIR TODAY</h3>
+            <p>To schedule a booking or make any enquiries, please don’t hesitate to call (03) 9387 4440 or email <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a>. Our workshop is located at 130 Henty Street, Reservoir; check out our <a href="https://www.facebook.com/WorxAutomotive?fref=ts">Facebook page</a> for news and reviews!</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}

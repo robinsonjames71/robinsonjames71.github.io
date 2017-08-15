@@ -87,6 +87,18 @@ function showDivs(n, direction) {
 }
 
 (function(){
+    var clicked = false;
+    var navigation = $('#main-navigation');
+    $('#nav-menu-state').on('change', function() {
+        if (!clicked) {
+            navigation.toggleClass('active');
+        } else {
+            setTimeout(function() {
+                navigation.toggleClass('active');
+            }, 400)
+        }
+        clicked = !clicked;
+    })
     $('.play-btn').on('click', function() {
         $('.embedded-video').show().css({'z-index': 1})
             .attr('src', $('.embedded-video').attr('src') + "&autoplay=1")

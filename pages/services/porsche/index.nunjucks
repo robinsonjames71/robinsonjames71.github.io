@@ -1,0 +1,52 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Porsche Service">
+        <div class="title-container Porsche">
+            <div class="w3-col s6 title">
+                <h2>Porsche Service</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/brands-banner.html" %}
+
+    <div class="w3-row servicing-vehicle">
+        <div class="w3-row w3-col s10 l6 images">
+            <div class="w3-col s10">
+                <img srcset="/images/services-page/brands/porsche-2@2x.jpg" src="/images/services-page/brands/porsche-2.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
+            </div>
+            <div class="w3-col s10 over right">
+                <img srcset="/images/services-page/brands/porsche@2x.jpg" src="/images/services-page/brands/porsche.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
+            </div>
+            <div class="w3-col s10 bg-border"></div>
+        </div>
+        <div class="w3-col s0 l1">
+        </div>
+        <div class="w3-col s10 l5">
+            <h2>GET A PORSCHE SERVICE FROM MELBOURNE’S BEST</h2>
+            <p>Ongoing care is important for any vehicle, but a general mechanic can’t offer the same results as a specialist. Works Automotive is a professional mechanic specialising in providing servicing and repairs for European cars with extensive experience working on a variety of Porsche models.</p>
+            <h3>QUALITY SERVICING THAT ONLY A PORSCHE MECHANIC CAN PROVIDE</h3>
+            <p>Our team of <a href="http://www.worxauto.com.au/">factory trained technicians</a> has the knowledge, experience and tools necessary to offer the best Porsche service in Melbourne. Services are accompanied by a full safety inspection; after which we will advise you of any issues that need to be resolved or could arise in the future. For repairs, we can source genuine aftermarket parts to ensure the quality of the job meets the standard you deserve.</p>
+            <p>We work with both classic and modern models as one of the best Porsche mechanic teams in Melbourne, and will offer expert advice on how to preserve your car’s condition well into the future. Our team also boasts extensive knowledge when it comes to electrical components, allowing us to diagnose and repair any issues even in the most complex systems.</p>
+            <h3>WE’LL TREAT YOUR PORSCHE AS IF IT’S OUR OWN!</h3>
+            <p>Whether you need a once-off repair or ongoing maintenance, you can always have full confidence when you choose Worx Automotive for a Porsche service. We focus on putting your needs first to ensure your vehicle offers long term performance, efficiency and safety no matter the make or model, and our team is fully covered by insurance to give you peace of mind.</p>
+            <h3>GET IN TOUCH</h3>
+            <p>If you have any enquiries or would like to make a booking with a Worx Porsche mechanic, don’t hesitate to call (03) 9387 4440 or send an email to <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a>. Otherwise, head over to our <a href="https://www.facebook.com/WorxAutomotive?fref=ts">Facebook page for updates, imagery and customer reviews!</p>
+            <p>Our workshop is at 130 Henty Street, Reservoir.</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}

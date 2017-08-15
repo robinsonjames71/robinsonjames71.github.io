@@ -26,6 +26,9 @@
             <div class="w3-col s10 left">
                 <img srcset="/images/services-page/brands/mercedes-benz-1@2x.jpg" src="/images/services-page/brands/mercedes-benz-1.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
             </div>
+            <div class="w3-col s10 over right">
+                <img srcset="/images/services-page/brands/mercedes-benz@2x.jpg" src="/images/services-page/brands/mercedes-benz.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
+            </div>
             <div class="w3-col s10 bg-border"></div>
         </div>
         <div class="w3-col s0 l1">

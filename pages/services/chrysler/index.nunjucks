@@ -1,0 +1,49 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-display-container header">
+        <img srcset="/images/headers/services-head.jpg 1680w,
+                     /images/headers/services-head@0.jpg 840w,
+                     /images/headers/services-head@1.jpg 2520w,
+                     /images/headers/services-head@2x.jpg 3360w"
+                src="/images/headers/services-head.jpg"
+                class="preview"
+                alt="Worx Auto Chrysler Service">
+        <div class="title-container mini-cooper">
+            <div class="w3-col s4 title">
+                <h2>Chrysler Service</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/brands-banner.html" %}
+
+    <div class="w3-row servicing-vehicle">
+        <div class="w3-row w3-col s10 l6 images">
+            <div class="w3-col s10 behind left">
+                <img srcset="/images/services-page/brands/chrysler4@2x.jpg" src="/images/services-page/brands/chrysler4.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
+            </div>
+            <div class="w3-col s10 over right">
+                <img srcset="/images/services-page/brands/chrysler5@2x.jpg" src="/images/services-page/brands/chrysler5.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000 anim-del-1000">
+            </div>
+            <div class="w3-col s10 bg-border"></div>
+        </div>
+        <div class="w3-col s0 l1">
+        </div>
+        <div class="w3-col s10 l5">
+            <h2>BOOK A CHRYSLER SERVICE WITH MELBOURNE’S SPECIALIST</h2>
+            <p>From routine maintenance to unexpected repairs, it’s no secret that cars need ongoing work to ensure long-lasting performance, efficiency and safety. When you bring your car in for a service at Worx Automotive—the preferred Chrysler mechanic in Melbourne—a full safety inspection is conducted to find out if anything requires immediate attention; we’ll also provide advice for ongoing maintenance and warn you of any issues that may arise in the future.</p>
+            <p>If you require repairs, you can be sure our team will get the job done to the highest possible standard. As a Mini service specialist, we source genuine aftermarket parts and have extensive experience working with both modern and classic vehicles from this iconic European manufacturer. Combined with our range of modern equipment and comprehensive insurance, there’s no better place to take your Mini!</p>
+            <h3>COME TO THE CHRYSLER MECHANIC THAT PUTS YOUR NEEDS FIRST</h3>
+            <p>We take pride in our customer service and have worked hard to build a reputation among both private and corporate clients for quality Chrysler service and repair in Melbourne. Our focus is to give you 100% satisfaction in everything that we do, whether it be a quick service, a post-accident repair or anything in between. This is all part of our commitment to <a href="http://www.worxauto.com.au/">transparent, professional mechanic services</a> that give you a better understanding of your car, no matter the make or model.</p>
+            <h3>GIVE US A CALL AND BOOK IN WITH AN EXPERT MECHANIC</h3>
+            <p>Whether you are ready to book or just have a quick question, please don’t hesitate to get in touch by calling (03) 9387 4440, emailing <a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a> or <a href="https://www.facebook.com/WorxAutomotive?fref=ts">following us on Facebook</a>. Our Mini service specialist workshop is located in Melbourne’s north at 130 Henty Street, Reservoir.</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}
