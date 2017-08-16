@@ -22,9 +22,15 @@
     {% include "partials/brands-banner.html" %}
 
     <div class="w3-row servicing-vehicle">
+        <div class="w3-row w3-col s10 l6 images">
+            <div class="w3-col s10">
+                <img srcset="/images/services-page/brands/maserati@2x.jpg" src="/images/services-page/brands/maserati.jpg" alt="" class="animation-s anim-name-fadein anim-trigger-top-in-view anim-dur-2000">
+            </div>
+            <div class="w3-col s10 bg-border"></div>
+        </div>
         <div class="w3-col s0 l1">
         </div>
-        <div class="w3-col s10">
+        <div class="w3-col s10 l5">
             <h2>THE PREMIER MASERATI SERVICE AND REPAIRS SPECIALIST IN MELBOURNE</h2>
             <p>Ongoing maintenance is a necessity for any make or model, but European cars require a level of knowledge and experience that you’ll only get from a specialist. Worx Automotive is the go-to Maserati mechanic in Melbourne and has built a reputation on automotive services that go above and beyond the needs of the client.</p>
             <h3>A MASERATI MECHANIC THAT WILL GIVE YOUR CAR THE CARE IT DESERVES</h3>

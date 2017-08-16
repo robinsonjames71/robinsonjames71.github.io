@@ -321,12 +321,14 @@ img {
     position: absolute; }
     .carousel .carousel-slides:first-child {
       position: relative; }
+      .carousel .carousel-slides:first-child img {
+        margin-bottom: 0; }
   .carousel .video {
     width: 100vw;
     height: 100%; }
   .carousel .play-btn {
     position: absolute;
-    top: 70%;
+    bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10%;
@@ -363,6 +365,10 @@ img {
     margin-bottom: 16px !important; }
   .arrow {
     margin-top: 0; } }
+
+@media screen and (min-width: 1001px) {
+  .carousel .play-btn {
+    bottom: 5%; } }
 
 .carousel-button {
   height: 13px;
