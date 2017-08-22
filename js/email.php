@@ -1,6 +1,8 @@
+<html>
+<body>
 <?php
 
-    require './vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+    require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
     $mail = new PHPMailer;
 
@@ -32,3 +34,5 @@
     }
 
 ?>
+</body>
+</html>
