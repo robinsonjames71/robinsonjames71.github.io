@@ -23,21 +23,21 @@
         <div class="w3-col s4">
             <div class="content google-plus">
                 <a href="https://plus.google.com/107514218448574641880/about">
-                    <img src="/images/icons/google-plus.svg" width="83" height="55" alt="">
+                    <img src="/images/icons/google-plus.svg" width="83" height="55" alt="Worx Automotive Google Plus">
                 </a>
             </div>
         </div>
         <div class="w3-col s4">
             <div class="content facebook">
                 <a href="https://www.facebook.com/WorxAutomotive">
-                    <img src="/images/icons/facebook.svg" width="59" height="56" alt="">
+                    <img src="/images/icons/facebook.svg" width="59" height="56" alt="Worx Automotive Facebook">
                 </a>
             </div>
         </div>
         <div class="w3-col s4">
             <div class="content instagram">
                 <a href="https://instagram.com/worxauto/">
-                    <img src="/images/icons/instagram-white.svg" width="61" height="56" alt="">
+                    <img src="/images/icons/instagram-white.svg" width="61" height="56" alt="Worx Automotive Instagram">
                 </a>
             </div>
         </div>

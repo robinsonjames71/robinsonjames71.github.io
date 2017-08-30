@@ -5,7 +5,7 @@
     <div id="fb-root"></div>
     {% include "partials/navigation.html" %}
 
-    <div class="w3-display-container carousel">
+    <div class="w3-display-container carousel" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="carousel-slides video">
             <img srcset="/images/carousel/mechanic-video.jpg 1680w,
                          /images/carousel/mechanic-video@0.jpg 840w,
@@ -22,21 +22,21 @@
                      /images/carousel/mechanic-bmw@1.jpg 2520w,
                      /images/carousel/mechanic-bmw@2x.jpg 3360w"
                 src="/images/carousel/mechanic-bmw.jpg"
-                class="carousel-slides"
-                alt="alt">
+                class="carousel-slides" itemprop="photo"
+                alt="Independent European Specialist">
         <img srcset="/images/carousel/mechanic-resevoir.jpg 1680w,
                      /images/carousel/mechanic-resevoir@0.jpg 840w,
                      /images/carousel/mechanic-resevoir@1.jpg 2520w,
                      /images/carousel/mechanic-resevoir@2x.jpg 3360w"
                 src="/images/carousel/mechanic-resevoir.jpg"
                 class="carousel-slides"
-                alt="alt">
+                alt="Automotive Service">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
             <div class="arrow w3-left" onclick="plusDivs(-1, 0)">
-                <img src="/images/carousel/left-arrow.svg" alt="">
+                <img src="/images/carousel/left-arrow.svg" alt="Left">
             </div>
             <div class="arrow w3-right" onclick="plusDivs(1, 1)">
-                <img src="/images/carousel/right-arrow.svg" alt="">
+                <img src="/images/carousel/right-arrow.svg" alt="Right">
             </div>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
@@ -46,11 +46,11 @@
 
     {% include "partials/contact-banner.html" %}
 
-    <div class="w3-row title-section">
+    <div class="w3-row title-section" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="title">
             <p>Welcome To</p>
-            <h3>Worx Automotive</h3>
-            <p>Independent European Specialist</p>
+            <h3 itemprop="name">Worx Automotive</h3>
+            <p itemprop="description">Independent European Specialist</p>
         </div>
     </div>
 
@@ -95,7 +95,7 @@
                             /images/home/home-servicing-lg.jpg 1600w,
                             /images/home/home-servicing-md.jpg 1112w"
                     src="/images/home/home-servicing-md.jpg"
-                    alt="Worx Automotive Independent European Specialist">
+                    alt="Independent European Car Specialist">
         </div>
     </div>
 
@@ -106,7 +106,7 @@
                             /images/home/home-mechanic-lg.jpg 1600w,
                             /images/home/home-mechanic-md.jpg 1112w"
                     src="/images/home/home-mechanic-md.jpg"
-                    alt="Worx Automotive Independent European Specialist">
+                    alt="Worx Automotive Independent European Specialist Service">
         </div>
         <div class="w3-col">
             <div class="content">

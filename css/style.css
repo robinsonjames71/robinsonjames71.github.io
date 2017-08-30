@@ -191,7 +191,8 @@ img {
     text-align: center; }
 
 .book-now {
-  display: none; }
+  display: none;
+  background-color: #575757; }
 
 .book-now img {
   width: 147px;
@@ -597,7 +598,6 @@ img {
       width: 80%;
       left: 50%;
       transform: translateX(-50%);
-      padding-top: 20px;
       padding-bottom: 20px; }
     .home-section .section-image:first-child img {
       padding-top: 0; }

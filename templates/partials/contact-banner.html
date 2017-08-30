@@ -1,22 +1,22 @@
 
-    <div class="w3-row contact-banner">
+    <div class="w3-row contact-banner" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="w3-col s4 phone">
             <div class="content contact-us">
                 <a href="/contact/">
                     <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
                     <p><strong>Contact Us</strong></p>
-                    <p>03 9387 4440</p>
-                    <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
+                    <p itemprop="telephone">03 9387 4440</p>
+                    <p><a href="mailto:service@worxauto.com.au" itemprop="email">service@worxauto.com.au</a></p>
                 </a>
             </div>
         </div>
         <div class="w3-col s6 m4">
             <div class="content address">
-                <a href="/contact/">
+                <a href="/contact/" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
                     <p><strong>Address</strong></p>
-                    <p>130 Henty Street,</p>
-                    <p>Reservoir, 3073</p>
+                    <p><span itemprop="streetAddress">130 Henty Street</span>,</p>
+                    <p><span itemprop="addressLocality">Reservoir</span>, <span itemprop="postalCode">3073</span></p>
                 </a>
             </div>
         </div>
@@ -27,6 +27,8 @@
                     <p><strong>Business Hours</strong></p>
                     <p>Mon to Fri - 8 to 5</p>
                     <p>Saturday - 9 to 1</p>
+                    <meta itemprop="openingHours" content="Mo-Fri 8:00-17:00"/>
+                    <meta itemprop="openingHours" content="Sa 9:00-13:00"/>
                 </a>
             </div>
         </div>

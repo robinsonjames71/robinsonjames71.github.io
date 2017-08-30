@@ -94,7 +94,7 @@
                             <a href="/services/mercedes-benz">Mercedes-Benz</a>
                         </li>
                         <li>
-                            <a href="/services/mini-cooper">Mini Coooper</a>
+                            <a href="/services/mini-cooper">Mini Cooper</a>
                         </li>
                         <li>
                             <a href="/services/porsche" class="sub-link">Porsche</a>
@@ -140,7 +140,7 @@
     </div>
 </nav>
 
-    <div class="w3-display-container carousel">
+    <div class="w3-display-container carousel" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="carousel-slides video">
             <img srcset="/images/carousel/mechanic-video.jpg 1680w,
                          /images/carousel/mechanic-video@0.jpg 840w,
@@ -157,21 +157,21 @@
                      /images/carousel/mechanic-bmw@1.jpg 2520w,
                      /images/carousel/mechanic-bmw@2x.jpg 3360w"
                 src="/images/carousel/mechanic-bmw.jpg"
-                class="carousel-slides"
-                alt="alt">
+                class="carousel-slides" itemprop="photo"
+                alt="Independent European Specialist">
         <img srcset="/images/carousel/mechanic-resevoir.jpg 1680w,
                      /images/carousel/mechanic-resevoir@0.jpg 840w,
                      /images/carousel/mechanic-resevoir@1.jpg 2520w,
                      /images/carousel/mechanic-resevoir@2x.jpg 3360w"
                 src="/images/carousel/mechanic-resevoir.jpg"
                 class="carousel-slides"
-                alt="alt">
+                alt="Automotive Service">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
             <div class="arrow w3-left" onclick="plusDivs(-1, 0)">
-                <img src="/images/carousel/left-arrow.svg" alt="">
+                <img src="/images/carousel/left-arrow.svg" alt="Left">
             </div>
             <div class="arrow w3-right" onclick="plusDivs(1, 1)">
-                <img src="/images/carousel/right-arrow.svg" alt="">
+                <img src="/images/carousel/right-arrow.svg" alt="Right">
             </div>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge carousel-button w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
@@ -180,24 +180,24 @@
     </div>
 
     
-    <div class="w3-row contact-banner">
+    <div class="w3-row contact-banner" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="w3-col s4 phone">
             <div class="content contact-us">
                 <a href="/contact/">
                     <img src="/images/contact-banner/mechanic-contact.svg" width="38" height="50" alt="">
                     <p><strong>Contact Us</strong></p>
-                    <p>03 9387 4440</p>
-                    <p><a href="mailto:service@worxauto.com.au">service@worxauto.com.au</a></p>
+                    <p itemprop="telephone">03 9387 4440</p>
+                    <p><a href="mailto:service@worxauto.com.au" itemprop="email">service@worxauto.com.au</a></p>
                 </a>
             </div>
         </div>
         <div class="w3-col s6 m4">
             <div class="content address">
-                <a href="/contact/">
+                <a href="/contact/" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <img src="/images/contact-banner/mechanic-address.svg" width="54" height="50" alt="">
                     <p><strong>Address</strong></p>
-                    <p>130 Henty Street,</p>
-                    <p>Reservoir, 3073</p>
+                    <p><span itemprop="streetAddress">130 Henty Street</span>,</p>
+                    <p><span itemprop="addressLocality">Reservoir</span>, <span itemprop="postalCode">3073</span></p>
                 </a>
             </div>
         </div>
@@ -208,16 +208,18 @@
                     <p><strong>Business Hours</strong></p>
                     <p>Mon to Fri - 8 to 5</p>
                     <p>Saturday - 9 to 1</p>
+                    <meta itemprop="openingHours" content="Mo-Fri 8:00-17:00"/>
+                    <meta itemprop="openingHours" content="Sa 9:00-13:00"/>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="w3-row title-section">
+    <div class="w3-row title-section" itemscope itemtype="http://schema.org/AutoRepair">
         <div class="title">
             <p>Welcome To</p>
-            <h3>Worx Automotive</h3>
-            <p>Independent European Specialist</p>
+            <h3 itemprop="name">Worx Automotive</h3>
+            <p itemprop="description">Independent European Specialist</p>
         </div>
     </div>
 
@@ -262,7 +264,7 @@
                             /images/home/home-servicing-lg.jpg 1600w,
                             /images/home/home-servicing-md.jpg 1112w"
                     src="/images/home/home-servicing-md.jpg"
-                    alt="Worx Automotive Independent European Specialist">
+                    alt="Independent European Car Specialist">
         </div>
     </div>
 
@@ -273,7 +275,7 @@
                             /images/home/home-mechanic-lg.jpg 1600w,
                             /images/home/home-mechanic-md.jpg 1112w"
                     src="/images/home/home-mechanic-md.jpg"
-                    alt="Worx Automotive Independent European Specialist">
+                    alt="Worx Automotive Independent European Specialist Service">
         </div>
         <div class="w3-col">
             <div class="content">
@@ -344,7 +346,7 @@
             <p><a href="/contact">Contact</a></p>
             <p><a href="/services">Services</a></p>
             <p><a href="/services/#repairs">Repair</a></p>
-            <p><a href="/services">Experience</a></p>
+            <p><a href="/gallery">Gallery</a></p>
             <p><a href="https://www.facebook.com/WorxAutomotive">Facebook</a></p>
             <p><a href="https://www.instagram.com/worxauto/">Instagram</a></p>
         </div>
