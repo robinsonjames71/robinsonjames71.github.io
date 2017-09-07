@@ -1,0 +1,15 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    {% include "partials/navigation.html" %}
+
+    <div class="w3-row successful-email">
+        <div class="w3-col s12">
+            <h2>Thank you for getting in&nbsp;contact.</h2>
+            <h2>We will be in touch&nbsp;soon.</h2>
+            <a href="../"><button>Return to Worx</button></a>
+        </div>
+    </div>
+
+{% endblock %}

@@ -27,6 +27,29 @@
         padding-top: 10px;
     }
 }
+.successful-email {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: center;
+
+    button {
+        width: 160px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: #000;
+        color: #FFF;
+        border: 1px solid #FFF;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #3C3C3C;
+        }
+    }
+}
 @media screen and (min-width: 601px) {
     .contact-page-section {
         display: flex;
@@ -60,22 +83,40 @@
         float: none;
         position: relative;
         margin: 0 auto;
-    }
-    .w3-col * {
-        width: 100%;
+
+        > div {
+            position: relative;
+        }
     }
     p {
         margin-top: 20px;
         margin-bottom: 10px;
     }
     input {
+        width: 100%;
         height: 54px;
         padding: 0 10px;
+
+        &.error {
+            outline: 3px solid #ff3d3d;
+        }
     }
     textarea {
-        // height: calc(100% - 54px);
+        width: 100%;
         height: 163px;
         padding: 10px;
+
+        &.error {
+            outline: 3px solid #ff3d3d;
+        }
+    }
+    label {
+        position: absolute;
+        width: auto;
+        top: 0;
+        right: 0;
+        color: #ff3d3d;
+        text-align: right;
     }
 }
 .submit-form {

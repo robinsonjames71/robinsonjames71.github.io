@@ -104,4 +104,33 @@ function showDivs(n, direction) {
             .attr('src', $('.embedded-video').attr('src') + "&autoplay=1")
     })
 
+    if($(".email-form").length > 0) {
+        $(".email-form").validate({
+            rules: {
+                name: "required",
+                email: {
+                        required: true,
+                        email: true
+                    },
+                subject: "required",
+                message: "required",
+                make: "required",
+                model: "required",
+                registration: "required"
+            },
+            messages: {
+                name: "Required",
+                email: {
+                        required: "Required",
+                        email: "Must be a valid email"
+                    },
+                subject: "Required",
+                message: "Required",
+                make: "Required",
+                model: "Required",
+                registration: "Required"
+            }
+        });
+    }
+
 })();
