@@ -118,7 +118,7 @@
     }
 }
 .nav-menu-state:checked ~ .mobile-menu {
-    max-height: 500px;
+    max-height: 520px;
 }
 .mobile-menu {
     position: absolute;
@@ -148,14 +148,14 @@
         display: block;
         width: calc(100% - 40px);
         height: 25px;
-        line-height: 50px;
+        line-height: 25px;
         margin-left: 20px;
         text-decoration: none;
     }
     .mobile-link:first-child {
         border-top: 1px solid #FFF;
         border-bottom: 0;
-        height: 30px;
+        height: 50px;
     }
     .mobile-social-media {
         display: flex;

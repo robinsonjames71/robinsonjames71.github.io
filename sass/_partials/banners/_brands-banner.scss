@@ -31,6 +31,7 @@
     height: 67px;
     padding-top: 5px;
     padding-bottom: 10px;
+    overflow: hidden;
 
     h4 {
         font-size: 22px;
@@ -59,7 +60,6 @@
     }
     &.servicing {
         height: 90px;
-        overflow: hidden;
     }
     .content {
         text-align: center;
