@@ -17,8 +17,8 @@
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'laferrari.turboservers.com.au';       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'developer@worxauto.com.au';        // SMTP username
-    $mail->Password = 'worxAutomatic30';                  // SMTP password
+    $mail->Username = '****';        // SMTP username
+    $mail->Password = '****';                  // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
